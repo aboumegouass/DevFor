@@ -1,0 +1,39 @@
+.site-grid-8.toggle-sidebar-aside
+  .profile-container
+   .row.justify-content-center
+    .col-md-7
+     .profile-about.panel-box.main
+
+      .panel-alert.green
+        p.text
+         i.flaticon-checked
+         strong تحذير: 
+         | لا يمكنك يغيير كنك يغيير هذه المعلومات أبدا
+
+      .profile-about-content.content-panel
+        .form-description.center
+          .text 
+            | لا يمكنك يغيير هذه المعلومات أبدا
+        .spinner
+          .bounce1
+          .bounce2
+          .bounce3
+
+        .form-group
+          label(for="user_old_pass", class="form-inp-label") كلمة المرور القديمة
+          input(type="password", placeholder="كلمة المرور القديمة", class="form-inp", id="user_old_pass", name="user_old_pass")
+        .form-group
+          label(for="user_new_pass", class="form-inp-label") كلمة المرور الجديدة
+          input(type="password", placeholder="كلمة المرور الجديدة", class="form-inp", id="user_new_pass", name="user_new_pass")
+        .form-group
+          label(for="user_re_new_pass", class="form-inp-label") إعادة كلمة المرور الجديدة
+          input(type="password", placeholder="إعادة كلمة المرور الجديدة", class="form-inp", id="user_re_new_pass", name="user_re_new_pass")
+
+        .form-note
+          .text 
+            strong ملاحظة: 
+            | لا يمكنك يغيير هذه المعلومات أبدا
+        .form-btn-submit.center
+          .btn.btn-ithoub.but-md
+              i.flaticon-save-1
+              | حفظ التغييرات

@@ -1,0 +1,69 @@
+nav.navbar.fixed-top.navbar-expand-sm.navbar-light.rbd-navbar.bg-white
+  .dropdown
+    a.btn-sidebar-toggle
+        i.flaticon-menu-1
+    a#dropdownMenuButton.dropdown-toggle.navbar-brand.nav-logo(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+      i.fa.fa-caret-down
+      img(src='img/logo.png', alt='')
+      span.text-logo
+        | حسابات #{pagetitle}
+    .dropdown-menu.items-list(aria-labelledby='dropdownMenuButton')
+      a.dropdown-item(href='#')
+        img(src='img/hr_icx.png', alt='')
+        span ساعة تدوين
+        small دوّن مقالاتك في الويب
+      a.dropdown-item(href='#')
+        img(src='img/qs_icx.png', alt='')
+        span منصة نقرة
+        small دوّن مقالاتك في الويب
+      a.dropdown-item(href='#')
+        img(src='img/rbd_icx.png', alt='')
+        span منصة نقرة
+        small دوّن مقالاتك في الويب
+      a.dropdown-item(href='#')
+        img(src='img/dv_icx.png', alt='')
+        span الربيدة
+        small دوّن مقالاتك في الويب
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.dropdown.right-nav-item
+        a.nav-link(href='login.php', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+          i.flaticon-notification
+        .dropdown-menu.notify-menu.notification-list
+          .drop-header
+            h3.drop-title 
+              i.flaticon-notification 
+              | الإشعارات
+          .drop-content
+            
+            ul.menu-list-items.menu-list-notification
+              li(v-for='notifItem in notif')
+                a(href='#')
+                  span(v-html='notifItem.profile')
+                  span(v-html='notifItem.title')
+                  span.noty-time(v-html='notifItem.ago')
+                  span.noty-icon(v-html='notifItem.icon')
+            a.see-all-link(href='#') كل الإشعارات...
+      li.nav-item.dropdown.right-nav-item
+        a.nav-link(href='create.php', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+          i.flaticon-user
+          span
+            |  عبد الحميد بومقواس
+        .dropdown-menu.notify-menu.user-menu
+          .drop-content
+            img.trick(src='img/trick.png', alt='')
+            ul.menu-list-items
+              li
+                a(href='#')
+                  i.flaticon-user-1
+                  |  الصفحة الشخصية
+              li
+                a(href='#')
+                  i.flaticon-settings
+                  |  الإعدادات
+              li
+                a(href='#')
+                  i.flaticon-logout
+                  |  تسجيل الخروج
+span.btn-scroll-top
+  i.fa.fa-angle-up

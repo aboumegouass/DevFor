@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: "Flaticon2";
+    src: url("../fonts/Flaticon2.eot");
+    src: url("../fonts/Flaticon2.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Flaticon2.woff2") format("woff2"),
+         url("../fonts/Flaticon2.woff") format("woff"),
+         url("../fonts/Flaticon2.ttf") format("truetype"),
+         url("../fonts/Flaticon2.svg#Flaticon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: "Flaticon2";
+      src: url("../fonts/Flaticon2.svg#Flaticon") format("svg");
+    }
+  }
+  
+  [class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
+  [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {   
+        font-family: Flaticon2;
+        font-size: 16px;
+        font-style: normal;
+        float: right;
+        margin-left: 5px;
+  }
+  
+  .flaticon2-cloud:before { content: "\f100"; }
+  .flaticon2-play-button:before { content: "\f101"; }
+  .flaticon2-smartphone:before { content: "\f102"; }
+  .flaticon2-error:before { content: "\f103"; }
+  .flaticon2-network:before { content: "\f104"; }
+  .flaticon2-play-button-1:before { content: "\f105"; }
+  .flaticon2-clock:before { content: "\f106"; }
+  .flaticon2-idea:before { content: "\f107"; }
+  .flaticon2-add:before { content: "\f108"; }
+  .flaticon2-smartphone-1:before { content: "\f109"; }
+  .flaticon2-list:before { content: "\f10a"; }
+  .flaticon2-photo:before { content: "\f10b"; }
+  .flaticon2-trash:before { content: "\f10c"; }
+  .flaticon2-push-pin:before { content: "\f10d"; }
+  .flaticon2-tv:before { content: "\f10e"; }
+  .flaticon2-radio:before { content: "\f10f"; }
+  .flaticon2-smartphone-2:before { content: "\f110"; }
+  .flaticon2-magnifying-glass:before { content: "\f111"; }
+  .flaticon2-pencil:before { content: "\f112"; }
+  .flaticon2-pdf:before { content: "\f113"; }
+  .flaticon2-doc:before { content: "\f114"; }
+  .flaticon2-writing:before { content: "\f115"; }
+  .flaticon2-book:before { content: "\f116"; }
+  .flaticon2-diploma:before { content: "\f117"; }
+  .flaticon2-search:before { content: "\f118"; }
+  .flaticon2-youtube:before { content: "\f119"; }
+  .flaticon2-share:before { content: "\f11a"; }
+  .flaticon2-database:before { content: "\f11b"; }
+  .flaticon2-pass:before { content: "\f11c"; }
+  .flaticon2-zoom:before { content: "\f11d"; }
+  .flaticon2-shopping-bag:before { content: "\f11e"; }
+  .flaticon2-devices:before { content: "\f11f"; }

@@ -1,0 +1,128 @@
+.form-inp, .form-inp-label {
+    font-family: 'JF Flat';
+    font-size: 13px;
+    font-weight: bold;
+}
+.form-inp {
+    width: 100%;
+    border: 0;
+    background-color: #fff;
+    padding: 7px 20px;
+    padding-top: 11px;
+    // border-radius: 20px;
+    border-bottom: 3px solid #ddd;
+    outline: none;
+    //box-shadow: 2px 2px 7px #f1f1f1;
+    transition: 0.3s;
+    &:focus {
+        transition: 0.3s;
+        outline: none;
+        box-shadow: -3px 3px 10px #f1f1f1;
+        border-bottom: 3px solid $primary;
+    }
+}
+.form-inp-label {
+    margin-bottom: 10px;
+    color: #555;
+}
+.form-btn-submit {
+    padding: 15px 0;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #f1f1f1;
+    &.center {
+        text-align: center;
+    }
+    .btn {
+        font-weight: bold;
+    }
+}
+.form-description {
+    font-size: 14px;
+    color: #555;
+    font-family: 'JF Flat';
+    border-right: 4px solid #ddd;
+    padding: 7px;
+    padding-right: 14px;
+    margin: 4px 0;
+}
+.form-title {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    &.large {
+      font-size: 23px;
+      [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+      [class^="flaticon-"]:after, [class*=" flaticon-"]:after  {
+          font-size: 23px;
+      }
+    }
+}
+.form-logo {
+    img {
+        width: 50px;
+    }
+}
+.form-footer {
+    a {
+        &:hover {
+            color: #000;
+        }
+    }
+    .or {
+        font-family: 'JF Flat';
+        color: #777;
+        font-size: 13px;
+    }
+    .link {
+        color: #555;
+        margin: 0 7px;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: 'JF Flat';
+    }
+    .btn {
+        padding: 6px 30px;
+        font-weight: bold;
+    }
+}
+.form-social {
+    .btn {
+        padding: 5px 30px;
+        font-size: 13px;
+        margin-left: 7px;
+        .icon {
+            margin-left: 4px;
+        }
+        span {
+            border-right: 2px solid rgba(255, 255, 255, 0.61);
+            padding-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    .or {
+        color: #555;
+        font-size: 17px;
+        margin: 15px 0;
+    }
+}
+.alrt-err {
+    display: inline-block;
+    position: absolute;
+    background-color: #ea4335;
+    border-radius: 20px;
+    font-family: 'JF Flat';
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 6px 9px;
+    left: 2px;
+    top: 3px;
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after,
+    [class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
+    [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after  {
+        font-size: 13px;
+        font-weight: bold;
+    }
+}

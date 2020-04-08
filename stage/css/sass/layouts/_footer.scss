@@ -1,0 +1,28 @@
+.footer-accounts {
+    padding: 10px 0;
+    .copy-text {
+        font-family: 'JF Flat';
+        color: #777;
+        font-size: 13px;
+    }
+    .nav {
+        margin-top: 7px;
+        > .nav-item {
+            border-left: 1px solid #ddd;
+            padding: 0;
+            &:last-child {
+                border-left: 0;
+            }
+            > .nav-link {
+                color: #555;
+                padding: 3px 8px;
+                font-weight: bold;
+                font-family: 'JF Flat';
+                font-size: 12px;
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}

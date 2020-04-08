@@ -1,0 +1,133 @@
+/*
+---------------------------------------------------------------------------------------------
+    Buttons
+---------------------------------------------------------------------------------------------
+*/
+.btn {
+    border-radius: 30px;
+    font-family: 'Jf Flat';
+    &.but-lg {
+        border-radius: 23px;
+        font-size: 18px;
+        padding: 15px 25px;
+        [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+        [class^="flaticon-"]:after, [class*=" flaticon-"]:after  {
+            font-size: 18px;
+        }
+    }
+    &.but-md {
+        font-size: 14px;
+        padding: 8px 20px;
+        [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+        [class^="flaticon-"]:after, [class*=" flaticon-"]:after  {
+            font-size: 14px;
+        }
+    }
+    &.but-sm {
+        font-size: 12px;
+        padding: 6px 18px;
+        [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+        [class^="flaticon-"]:after, [class*=" flaticon-"]:after  {
+            font-size: 13px;
+        }
+    }
+    &.btn-hour, &.btn-rabida, &.btn-ithoub {
+        color: #fff;
+      }
+      &.btn-default {
+        background: #ddd;
+        color: #555;
+        &:hover {
+          background: darken(#ddd, 10);
+          color: #333;
+        }
+      }
+      &.btn-rabida {
+        background: $green;
+        &:hover {
+          background: darken($green, 10);
+          color: #fff;
+        }
+      }
+      &.btn-ithoub {
+        background: $main;
+        &:hover {
+          background: darken($main, 10);
+          color: #fff;
+        }
+      }
+      &.btn-hour {
+        background: $blue;
+        &:hover {
+          background: darken($blue, 10);
+          color: #fff;
+        }
+      }
+      &.btn-red {
+        background: #ea4335;
+        color: #fff;
+        font-weight: bold;
+        &:hover {
+          background: darken(#ea4335, 10);
+          color: #fff;
+        }
+      }
+      &.btn-blue {
+        background: rgb(34, 102, 192);
+        color: #fff;
+        font-weight: bold;
+        &:hover {
+          background: darken(rgb(34, 102, 192), 10);
+          color: #fff;
+        }
+      }
+} 
+  .icobutton {
+      font-size: 1.6em;
+      position: relative;
+    margin: 0;
+    display: inline;
+      padding: 0;
+      color: #c0c1c3;
+      border: 0;
+      background: none;
+      overflow: visible;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    .fa {
+      display: block;
+      padding: 0 0.1em;
+    }
+  }
+  
+  .icobutton__text {
+      font-size: 0.75em;
+      position: absolute;
+      top: 100%;
+      right: 100%;
+      text-align: center;
+      line-height: 1.5;
+      color: #a6a6a6;
+  }
+  
+  .icobutton__text--side {
+      top: 0;
+      left: 100%;
+      width: 100%;
+      width: auto;
+      padding: 0 0 0 0.25em;
+  }
+  
+  /* fix for mo.js */
+  .icobutton svg {
+      left: 0;
+  }
+  
+  .icobutton:hover,
+  .icobutton:focus {
+      outline: none;
+  }
+  
+  /* Unicorn */
+  .icobutton--unicorn svg {
+      fill: #c0c1c3;
+  }

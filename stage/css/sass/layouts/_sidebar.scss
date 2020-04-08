@@ -1,0 +1,275 @@
+
+.ithoub-sub-sidebar {
+    transition: 0.3s;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    top: 65px;
+}
+
+.sidebar-title {
+    margin: 3px 10px;
+}
+.list-sidebar {
+    padding: 10px;
+    .has-menu {
+        cursor: pointer;
+        transition: 0.3s;
+        i.arrow-menu {
+            transition: 0.3s;
+            &.faRot {
+                transition: 0.3s;
+                transform: rotate(90deg);
+            }
+            
+        }
+    }
+    .link-item {
+        font-family: 'Jf Flat';
+        display: flex;
+        color: #555;
+        font-size: 13px;
+        align-items: center;
+        padding: 8px 14px;
+        border-radius: 20px;
+        margin: 1px 0;
+        [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+        [class^="flaticon-"]:after, [class*=" flaticon-"]:after  {
+            font-size: 15px;
+        }
+        &:hover {
+            background-color: #f1f1f1;   
+        }
+        &.active {
+            background-color: $primary;
+            color: #fff;
+            font-weight: bold;
+            img {
+                opacity: 1;
+            } 
+        }
+    }
+    .sub-menu {
+        padding: 5px 10px;
+        padding-right: 25px;
+        .sub-item {
+            display: flex;
+            align-items: center;
+            font-family: 'Jf Flat';
+            padding: 4px 0;
+            font-size: 12px;
+            color: #777;
+            [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+            [class^="flaticon-"]:after, [class*=" flaticon-"]:after  {
+                font-size: 15px;
+            }
+            &:hover {
+                color: #333;
+            }
+            &.active {
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.sidebar-title {
+    position: relative;
+    .add-btn {
+        position: absolute;
+        top: 4px;
+        left: 5px;
+        background: #f1f1f1;
+        color: #777;
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+        text-align: center;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        padding: 7px;
+        &:hover {
+            color: #333;
+            background: #ddd;
+        }
+        &:focus {
+            color: #000;
+            background: #ccc;
+        }
+    }
+}
+.ithoub-user-info {
+    background-color: transparent;
+    padding-top: 20px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+.sidebar-footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #f1f1f1;
+    .copy-text {
+        font-size: 13px;
+        color: #777;
+        margin: 0;
+    }
+    .site-link {
+        padding-right: 0;
+        > .nav-item {
+            > .nav-link {
+                font-size: 11px;
+                font-weight: bold;
+                margin-left: 8px;
+                color: #555;
+                padding: 6px 0;
+            }
+        }
+    }
+}
+/* -------------------------------------------------------------------------- */
+    /* Rabida list */
+/* -------------------------------------------------------------------------- */
+.rbd-list-sidebar {
+    margin-left: 5px;
+    background: #fff;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 5px #ddd;
+    -moz-box-shadow: 0 1px 5px #ddd;
+    -webkit-box-shadow: 0 1px 5px #ddd;
+    -o-box-shadow: 0 1px 5px #ddd;
+    &:first-of-type {
+        border-radius: 7px 7px 0 0; 
+    }
+    &:last-of-type {
+        border-radius: 0 0 7px 7px; 
+    }
+    &::before, &::after {
+        clear: both;
+        display: block;
+        content: " ";
+    }
+    .rbd-item {
+        padding: 10px;
+        padding-bottom: 26px;
+        
+        img {
+            width: 35px;
+            height: 35px;
+            float: right;
+            margin-left: 10px;
+            margin-top: 5px;
+            border-radius: 50%;
+        }
+        .rbd-title {
+            color: #555;
+            font-size: 16px;
+            margin: 3px 0;
+        }
+        .rbd-meta {
+            margin: 0;
+            color: #888;
+            width: 79.08%;
+            float: left;
+            padding: 0;
+            &::before, &::after {
+                clear: both;
+                display: block;
+                content: " ";
+            }
+            .meta-data {
+                float: right;
+                list-style: none;
+                font-size: 12px;
+                padding: 0 5px;
+                &:first-child {
+                    padding: 0;
+                }
+                [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+                [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    &.large {
+        margin-left: 0;
+        margin-bottom: 3px;
+        .rbd-item {
+            padding: 10px;
+            padding-bottom: 29px;
+            img {
+                width: 45px;
+                height: 45px;
+                margin-top: 4px;
+            }
+            .rbd-title {
+                font-size: 17px;
+                margin: 5px 0;
+            }
+            .rbd-meta {
+                width: 86.08%;
+                padding: 0;
+                .meta-data {
+                    font-size: 13px;
+                    padding: 0 5px;
+                    &:first-child {
+                        padding: 0;
+                    }
+                    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+                    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+*/
+.article-sub-titles {
+    border-right: 4px solid #ddd;
+    padding-right: 6px;
+}
+.art-main-title, .art-sub-title {
+    margin: 17px 0;
+    font-weight: normal;
+    font-family: 'DoidKufi';
+}
+.art-main-title {
+    color: #555;
+    font-size: 13px;
+    a {
+        color: #555;
+        &:hover {
+            color: #000;
+        }
+    }
+    &.active {
+        a {
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+}
+.art-sub-title {
+    color: #777;
+    font-size: 12px;
+    margin-right: 15px;
+    a {
+        color: #777;
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &.active {
+        a {
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+}

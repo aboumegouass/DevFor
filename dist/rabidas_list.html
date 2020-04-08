@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="icon" href="img/logo.png"/>
+    <title>إثوب</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/vue.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white">
+        <div class="dropdown"><a class="btn-sidebar-toggle"><i class="flaticon-menu-1"></i></a><a class="dropdown-toggle navbar-brand nav-logo" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down"></i><img src="img/logo.png" alt=""/><span class="text-logo">حسابات إثوب</span></a>
+          <div class="dropdown-menu items-list" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><img src="img/hr_icx.png" alt=""/><span>ساعة تدوين</span><small>دوّن مقالاتك في الويب</small></a><a class="dropdown-item" href="#"><img src="img/qs_icx.png" alt=""/><span>منصة نقرة</span><small>دوّن مقالاتك في الويب</small></a><a class="dropdown-item" href="#"><img src="img/rbd_icx.png" alt=""/><span>منصة نقرة</span><small>دوّن مقالاتك في الويب</small></a><a class="dropdown-item" href="#"><img src="img/dv_icx.png" alt=""/><span>الربيدة</span><small>دوّن مقالاتك في الويب</small></a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="login.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-notification"></i></a>
+              <div class="dropdown-menu notify-menu notification-list">
+                <div class="drop-header">
+                  <h3 class="drop-title"> <i class="flaticon-notification"> </i>الإشعارات</h3>
+                </div>
+                <div class="drop-content">
+                  <ul class="menu-list-items menu-list-notification">
+                    <li v-for="notifItem in notif"><a href="#"><span v-html="notifItem.profile"></span><span v-html="notifItem.title"></span><span class="noty-time" v-html="notifItem.ago"></span><span class="noty-icon" v-html="notifItem.icon"></span></a></li>
+                  </ul><a class="see-all-link" href="#">كل الإشعارات...</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="create.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-user"></i><span> عبد الحميد بومقواس</span></a>
+              <div class="dropdown-menu notify-menu user-menu">
+                <div class="drop-content"><img class="trick" src="img/trick.png" alt=""/>
+                  <ul class="menu-list-items">
+                    <li><a href="#"><i class="flaticon-user-1"></i> الصفحة الشخصية</a></li>
+                    <li><a href="#"><i class="flaticon-settings"></i> الإعدادات</a></li>
+                    <li><a href="#"><i class="flaticon-logout"></i> تسجيل الخروج</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav><span class="btn-scroll-top"><i class="fa fa-angle-up"></i></span>
+      <!-- Navbar Area-->
+      <nav class="navbar navbar-expand-xl navbar-light bg-white sub-navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="profile.html"><i class="flaticon-user"></i> حول المستخدم</a></li>
+          <li class="nav-item"><a class="nav-link" href="rabidas_list.html"><i class="flaticon-folder-2"></i> الربائد </a></li>
+          <li class="nav-item"><a class="nav-link" href="articles_list.html"><i class="flaticon-reading"></i> المقالات المضافة</a></li>
+          <li class="nav-item"><a class="nav-link" href="posts_list.html"><i class="flaticon-menu"></i> مواضيع المجتمع</a></li>
+        </ul>
+      </nav>
+      <div class="site-row">
+        <div class="site-grid-2 sidebar-side toggle-sidebar-aside">
+          <div class="ithoub-sidebar">
+            <div class="ithoub-sidebar-inner">
+              <div class="ithoub-user-info">
+                <div class="ithoub-user-avatar"><img src="img/abdellah.png" alt=""/></div>
+                <div class="ithoub-user-content">
+                  <h3 class="user-title">عبد الحميد بومقواس</h3>
+                  <p class="user-mata">@aboumegouass</p>
+                </div>
+              </div>
+              <div class="list-sidebar position-sticky"><a class="link-item active" href="index.html"><i class="flaticon-house"></i> الرئيسية</a>
+                <h3 class="sidebar-title has-menu" id="profile-list-btn"><i class="flaticon-user"></i> الصفحة الشخصية<i class="fa fa-caret-down mr-2 arrow-menu"></i></h3>
+                <div class="sub-menu" id="profile-list"><a class="sub-item" href="profile.html"><i class="flaticon-user"></i> حول المستخدم</a><a class="sub-item" href="rabidas_list.html"><i class="flaticon-folder-2"></i> الربائد </a><a class="sub-item" href="articles_list.html"><i class="flaticon-reading"></i> المقالات المضافة</a><a class="sub-item" href="posts_list.html"><i class="flaticon-menu"></i> مواضيع المجتمع</a></div>
+                <h3 class="sidebar-title has-menu" id="myrabida-list-btn"><i class="flaticon-settings-1"></i> الإعدادات <i class="fa fa-caret-down mr-2 arrow-menu"></i></h3>
+                <div class="sub-menu" id="myrabida-list"><a class="sub-item" href="settings.html"><i class="flaticon-document"></i> تعديل المعلومات الشخصية</a><a class="sub-item" href=""><i class="flaticon-document"></i> إعادة تعيين كلمة المرور</a><a class="sub-item" href=""><i class="flaticon-document"></i> إعادة تعيين اسم المستخدم</a><a class="sub-item" href=""><i class="flaticon-document"></i> تأكيد الهوية</a></div><a class="link-item" href=""><i class="flaticon-settings-1"></i> سياسة الخصوصية</a><a class="link-item" href=""><i class="flaticon-settings-1"></i> شروط الإستخدام</a>
+                <div class="sidebar-footer">
+                  <p class="copy-text">&copy; جميع الحقوق محفوظة لدى إثوب 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-grid-8 toggle-sidebar-aside">
+          <div class="profile-container">
+            <div class="cover-profile p-3" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')">
+              <div class="img-profile" style="background-image: url('img/madf3366.png')"></div>
+              <div class="profile-content">
+                <h3 class="profile-fullname">عبد الله الهادي</h3>
+                <p class="profile-meta"><i class="fa fa-map-marker-alt"> </i>الجزائر, دار الشيوخ</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 p-0 pl-2">
+                <div class="profile-about panel-box main">
+                  <div class="profile-about-head head-panel">
+                    <h2 class="panel-title"><i class="flaticon-user"> </i>المعلومات الشخصية</h2>
+                  </div>
+                  <div class="profile-about-content content-panel">
+                    <div class="about-text">
+                      <h2 class="heading">عن المستخدم</h2>
+                      <p class="text">قصة علاء الدين والمصباح السحري. قصة السندباد البحري. أجمل القصص القصيرة. قصص أطفال. أنواع القصص. قصة فيها حكمة. رواية رجال في الشمس. ما قصة كذبة نيسان</p>
+                    </div>
+                    <h3 class="sidebar-title"><i class="flaticon-folder-2">   </i>الربائد </h3>
+                    <div class="rbd-list-sidebar large">
+                      <div class="rbd-item"><img src="img/it_ic.png" alt=""/>
+                        <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                        <ul class="rbd-meta">
+                          <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                          <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                          <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rbd-list-sidebar large">
+                      <div class="rbd-item"><img src="img/naqr_icx.png" alt=""/>
+                        <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                        <ul class="rbd-meta">
+                          <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                          <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                          <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rbd-list-sidebar large">
+                      <div class="rbd-item"><img src="img/rbd_icx.png" alt=""/>
+                        <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                        <ul class="rbd-meta">
+                          <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                          <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                          <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rbd-list-sidebar large">
+                      <div class="rbd-item"><img src="img/dv_icx.png" alt=""/>
+                        <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                        <ul class="rbd-meta">
+                          <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                          <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                          <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 p-0">
+                <div class="position-sticky-profile">
+                  <div class="profile-raiting panel-box main">
+                    <div class="head-panel">
+                      <h2 class="panel-title"><i class="flaticon-star"> </i>نقاط السمعة</h2>
+                    </div>
+                    <div class="content-panel">
+                      <div class="profile-raiting-cont">
+                        <h1 class="profile-raiting-number">2500</h1>
+                        <p class="profile-raiting-text">نقطة</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-social panel-box main">
+                    <div class="head-panel">
+                      <h2 class="panel-title"><i class="flaticon-shuffle"> </i>معلومات الاتصال</h2>
+                    </div>
+                    <div class="content-panel">
+                      <div class="profile-social-cont">
+                        <ul class="social-nav nav justify-content-center">
+                          <li><a href="#" targe="_blank"><i class="flaticon-facebook-logo-in-circular-button-outlined-social-symbol"></i></a></li>
+                          <li><a href="#" targe="_blank"><i class="flaticon-twitter-circular-button"></i></a></li>
+                          <li><a href="#" targe="_blank"><i class="flaticon-linkedin"></i></a></li>
+                          <li><a href="#" targe="_blank"><i class="flaticon-pinterest-social-visual-website-logotype"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-grid-2">
+          <div class="ithoub-sub-sidebar">
+            <h3 class="sidebar-title"><i class="flaticon-folder-4"> </i> الربائد المقترحة</h3>
+            <div class="rbd-list-sidebar">
+              <div class="rbd-item"><img src="img/it_ic.png" alt=""/>
+                <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                <ul class="rbd-meta">
+                  <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rbd-list-sidebar">
+              <div class="rbd-item"><img src="img/naqr_icx.png" alt=""/>
+                <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                <ul class="rbd-meta">
+                  <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rbd-list-sidebar">
+              <div class="rbd-item"><img src="img/rbd_icx.png" alt=""/>
+                <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                <ul class="rbd-meta">
+                  <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rbd-list-sidebar">
+              <div class="rbd-item"><img src="img/dv_icx.png" alt=""/>
+                <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                <ul class="rbd-meta">
+                  <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

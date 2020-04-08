@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="icon" href="img/logo.png"/>
+    <title>إثوب</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/vue.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white">
+        <div class="dropdown"><a class="btn-sidebar-toggle"><i class="flaticon-menu-1"></i></a><a class="dropdown-toggle navbar-brand nav-logo" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-caret-down"></i><img src="img/logo.png" alt=""/><span class="text-logo">حسابات إثوب</span></a>
+          <div class="dropdown-menu items-list" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#"><img src="img/hr_icx.png" alt=""/><span>ساعة تدوين</span><small>دوّن مقالاتك في الويب</small></a><a class="dropdown-item" href="#"><img src="img/qs_icx.png" alt=""/><span>منصة نقرة</span><small>دوّن مقالاتك في الويب</small></a><a class="dropdown-item" href="#"><img src="img/rbd_icx.png" alt=""/><span>منصة نقرة</span><small>دوّن مقالاتك في الويب</small></a><a class="dropdown-item" href="#"><img src="img/dv_icx.png" alt=""/><span>الربيدة</span><small>دوّن مقالاتك في الويب</small></a></div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="login.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-notification"></i></a>
+              <div class="dropdown-menu notify-menu notification-list">
+                <div class="drop-header">
+                  <h3 class="drop-title"> <i class="flaticon-notification"> </i>الإشعارات</h3>
+                </div>
+                <div class="drop-content">
+                  <ul class="menu-list-items menu-list-notification">
+                    <li v-for="notifItem in notif"><a href="#"><span v-html="notifItem.profile"></span><span v-html="notifItem.title"></span><span class="noty-time" v-html="notifItem.ago"></span><span class="noty-icon" v-html="notifItem.icon"></span></a></li>
+                  </ul><a class="see-all-link" href="#">كل الإشعارات...</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="create.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-user"></i><span> عبد الحميد بومقواس</span></a>
+              <div class="dropdown-menu notify-menu user-menu">
+                <div class="drop-content"><img class="trick" src="img/trick.png" alt=""/>
+                  <ul class="menu-list-items">
+                    <li><a href="#"><i class="flaticon-user-1"></i> الصفحة الشخصية</a></li>
+                    <li><a href="#"><i class="flaticon-settings"></i> الإعدادات</a></li>
+                    <li><a href="#"><i class="flaticon-logout"></i> تسجيل الخروج</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav><span class="btn-scroll-top"><i class="fa fa-angle-up"></i></span>
+      <!-- Navbar Area-->
+      <nav class="navbar navbar-expand-xl navbar-light bg-white sub-navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="settings.html"><i class="flaticon-edit-2"></i> تعديل المعلومات</a></li>
+          <li class="nav-item"><a class="nav-link" href="reset.html"><i class="flaticon-padlock"></i> إعادة تعيين كلمة المرور</a></li>
+          <li class="nav-item"><a class="nav-link" href="identify.html"><i class="flaticon-sticker"></i> تأكيد الهوية</a></li>
+        </ul>
+      </nav>
+      <div class="site-row">
+        <div class="site-grid-2 sidebar-side toggle-sidebar-aside">
+          <div class="ithoub-sidebar">
+            <div class="ithoub-sidebar-inner">
+              <div class="ithoub-user-info">
+                <div class="ithoub-user-avatar"><img src="img/abdellah.png" alt=""/></div>
+                <div class="ithoub-user-content">
+                  <h3 class="user-title">عبد الحميد بومقواس</h3>
+                  <p class="user-mata">@aboumegouass</p>
+                </div>
+              </div>
+              <div class="list-sidebar position-sticky"><a class="link-item active" href="index.html"><i class="flaticon-house"></i> الرئيسية</a>
+                <h3 class="sidebar-title has-menu" id="profile-list-btn"><i class="flaticon-user"></i> الصفحة الشخصية<i class="fa fa-caret-down mr-2 arrow-menu"></i></h3>
+                <div class="sub-menu" id="profile-list"><a class="sub-item" href="profile.html"><i class="flaticon-user"></i> حول المستخدم</a><a class="sub-item" href="rabidas_list.html"><i class="flaticon-folder-2"></i> الربائد </a><a class="sub-item" href="articles_list.html"><i class="flaticon-reading"></i> المقالات المضافة</a><a class="sub-item" href="posts_list.html"><i class="flaticon-menu"></i> مواضيع المجتمع</a></div>
+                <h3 class="sidebar-title has-menu" id="myrabida-list-btn"><i class="flaticon-settings-1"></i> الإعدادات <i class="fa fa-caret-down mr-2 arrow-menu"></i></h3>
+                <div class="sub-menu" id="myrabida-list"><a class="sub-item" href="settings.html"><i class="flaticon-document"></i> تعديل المعلومات الشخصية</a><a class="sub-item" href=""><i class="flaticon-document"></i> إعادة تعيين كلمة المرور</a><a class="sub-item" href=""><i class="flaticon-document"></i> إعادة تعيين اسم المستخدم</a><a class="sub-item" href=""><i class="flaticon-document"></i> تأكيد الهوية</a></div><a class="link-item" href=""><i class="flaticon-settings-1"></i> سياسة الخصوصية</a><a class="link-item" href=""><i class="flaticon-settings-1"></i> شروط الإستخدام</a>
+                <div class="sidebar-footer">
+                  <p class="copy-text">&copy; جميع الحقوق محفوظة لدى إثوب 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-grid-8 toggle-sidebar-aside">
+          <div class="profile-container">
+            <div class="row justify-content-center">
+              <div class="col-md-7">
+                <div class="profile-about panel-box main">
+                  <div class="profile-about-head head-panel">
+                    <h2 class="panel-title"><i class="flaticon-sticker"> </i>تأكيد هوية صاحب الحساب</h2>
+                  </div>
+                  <div class="profile-about-content content-panel">
+                    <div class="form-description center">
+                      <div class="text">
+                         لا يمكنك يغيير هذه المعلومات أبدا</div>
+                    </div>
+                    <div class="spinner">
+                      <div class="bounce1"></div>
+                      <div class="bounce2"></div>
+                      <div class="bounce3"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 p-0">
+                        <div class="form-group">
+                          <label class="form-inp-label" for="user_ident_type">نوع الوثيقة</label>
+                          <select class="form-inp" id="user_ident_type" name="user_ident_type">
+                            <option value="">اختر نوع الوثيقة</option>
+                            <option value="0">بطاقة الهوية</option>
+                            <option value="1">جواز السفر</option>
+                            <option value="2">رخصة السياقة</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row"> 
+                      <div class="col-md-12 p-0">
+                        <div class="form-group">
+                          <label class="form-inp-label" for="user_img_ident">صورة الوثيقة</label>
+                          <input class="form-inp" id="user_img_ident" type="file" name="user_img_ident"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-note">
+                      <div class="text"> <strong>ملاحظة: </strong>لا يمكنك يغيير هذه المعلومات أبدا</div>
+                    </div>
+                    <div class="form-btn-submit center">
+                      <div class="btn but-md btn-ithoub"><i class="flaticon-save-1"></i>حفظ التغييرات</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-grid-2">
+          <div class="ithoub-sub-sidebar">
+            <h3 class="sidebar-title"><i class="flaticon-folder-4"> </i> الربائد المقترحة</h3>
+            <div class="rbd-list-sidebar">
+              <div class="rbd-item"><img src="img/it_ic.png" alt=""/>
+                <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                <ul class="rbd-meta">
+                  <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rbd-list-sidebar">
+              <div class="rbd-item"><img src="img/naqr_icx.png" alt=""/>
+                <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                <ul class="rbd-meta">
+                  <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rbd-list-sidebar">
+              <div class="rbd-item"><img src="img/rbd_icx.png" alt=""/>
+                <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                <ul class="rbd-meta">
+                  <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rbd-list-sidebar">
+              <div class="rbd-item"><img src="img/dv_icx.png" alt=""/>
+                <h3 class="rbd-title">ربيدة الطائر الجارح</h3>
+                <ul class="rbd-meta">
+                  <li class="meta-data"><i class="flaticon-list"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-study"></i> 15,360</li>
+                  <li class="meta-data"><i class="flaticon-tag-1"></i> عامة</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
