@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    //sass = require('gulp-sass'),
+    sass = require('gulp-sass'),
     concat = require('gulp-concat'),
     autoprefixer = require('gulp-autoprefixer'),
     minify = require('gulp-minify'),
@@ -20,7 +20,7 @@ gulp.task('html', function(){
 gulp.task('css', function(){
     return gulp.src(['stage/css/**/*.css', 'stage/css/**/*.scss'])
     .pipe(sourcemaps.init())
-    //.pipe(sass({outputStyle: 'compressed',}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed',}).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(concat('main.css'))
     .pipe(sourcemaps.write('.'))
@@ -41,7 +41,7 @@ gulp.task('js', function(){
 gulp.task('watch', function(){
     require('./server.js');
     livereload.listen();
-    gulp.watch("stage/html/**/*.pug", ['html']);
-    //gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], ['css']);
-    gulp.watch("stage/js/**/*.js", ['js']);
+    gulp.watch("stage/html/**/*.pug", gulp.series('html'));
+    gulp.watch(["stage/css/**/*.css", "stage/css/**/*.scss"], gulp.series('css'));
+    gulp.watch("stage/js/**/*.js", gulp.series('js'));
 });
