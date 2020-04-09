@@ -124,13 +124,10 @@
         [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
         [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
             font-size: 25px;
-            margin-top: 18px;
             margin-right: 15px;
-            font-weight: bold;
             transition: 0.3s;
         }
         color: #000;
-        transition: 0.3s;
         cursor: pointer;
         &.open-active {
             color: #999;

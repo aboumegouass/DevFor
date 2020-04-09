@@ -11,8 +11,8 @@ html(lang="en")
             
             .site-row
                 include pug/layout/sidebar
-                include pug/layout/IndexContent
-                | Cdf
+                .site-grid-8.toggle-sidebar-aside.pb-5
+                    include pug/components/post_row
                 include pug/layout/subsidebar
             
         include pug/layout/scripts
