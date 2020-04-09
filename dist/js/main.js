@@ -82,10 +82,10 @@ $('.btn-scroll-top').click(function(){
     $('.toggle-sidebar-aside, .article-single').toggleClass('nocolumn');
   });
 })
-$('.owl-carousel').owlCarousel({
+$('.commun-carousel').owlCarousel({
     rtl:true,
     loop:false,
-    margin:10,
+    margin:20,
     nav:false,
     dots: false,
     lazyLoad:true,

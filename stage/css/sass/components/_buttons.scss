@@ -81,6 +81,15 @@
           color: #fff;
         }
       }
+      &.btn-prim {
+        background: $primary;
+        color: #fff;
+        font-weight: bold;
+        &:hover {
+          background: darken($primary, 10);
+          color: #fff;
+        }
+      }
 } 
   .icobutton {
       font-size: 1.6em;

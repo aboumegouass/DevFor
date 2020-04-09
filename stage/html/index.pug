@@ -13,6 +13,16 @@ html(lang="en")
                 include pug/layout/sidebar
                 .site-grid-8.toggle-sidebar-aside.pb-5
                     include pug/components/post_row
+                    include pug/components/post_row
+                    .owl-carousel.commun-carousel.pr-2.pl-2(dir="ltr")
+                        include pug/components/community
+                        include pug/components/community
+                        include pug/components/community
+                        include pug/components/community
+                        include pug/components/community
+                    .center.load-more
+                        button.btn.but-sm.btn-prim
+                            | تحميل المزيد
                 include pug/layout/subsidebar
-            
+
         include pug/layout/scripts
