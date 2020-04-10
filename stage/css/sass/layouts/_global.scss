@@ -45,8 +45,9 @@ body {
         &.sidebar-side {
             position: fixed;
             background: #fff;
+            top: 59px;
             transition: 0.3s;
-            transform: translateX(0);
+            transform: translateX(-7px);
             height: 100%;
             box-shadow: -1px 0 2px #ddd;
             &.nocolumn {
@@ -343,6 +344,28 @@ body {
     }
 }
 
+/*
+----------------------------------------------------------------------------------------------
+    Header Style
+----------------------------------------------------------------------------------------------
+*/
+
+.header-page {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    padding: 95px 25px;
+    background-position: center left;
+    .header-title {
+        color: #555;
+        margin-top: 20px;
+    }
+    .header-text {
+        font-size: 18px;
+        color: #666;
+        margin: 0;
+        line-height: 30px;
+    }
+}
 /*
 ----------------------------------------------------------------------------------------------
     Platform Items

@@ -83,11 +83,21 @@
       }
       &.btn-prim {
         background: $primary;
+        border: 2px solid $primary;
         color: #fff;
         font-weight: bold;
         &:hover {
           background: darken($primary, 10);
           color: #fff;
+        }
+      }
+      &.btn-prim-out {
+        border: 2px solid $primary;
+        color: $primary;
+        font-weight: bold;
+        &:hover {
+          border: 2px solid darken($primary, 10);
+          color: darken($primary, 10);
         }
       }
 } 
