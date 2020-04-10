@@ -149,10 +149,10 @@
         position: fixed;
         margin: 0 auto;
         padding: 10px 0;
-        width: 60%;
+        width: 50%;
 
-        left: 255px;
-        right: 255px;
+        //left: 365px;
+        right: 290px;
         box-shadow: 0 2px 4px #f1f1f1;
         -o-box-shadow: 0 2px 4px #f1f1f1;
         -moz-box-shadow: 0 2px 4px #f1f1f1;
@@ -196,7 +196,7 @@
 @media (min-width: 992px) {
   .navbar {
     &.sub-navbar {
-        width: 820px;
+        width: 772px;
     }
   }
 }
