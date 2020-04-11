@@ -17,3 +17,22 @@ $('.commun-carousel').owlCarousel({
         }
     }
 });
+$('.aside-carousel').owlCarousel({
+    rtl:true,
+    loop:false,
+    margin:20,
+    nav:false,
+    dots: false,
+    lazyLoad:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1200:{
+            items:1
+        }
+    }
+});

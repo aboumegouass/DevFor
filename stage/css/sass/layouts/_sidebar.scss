@@ -3,7 +3,8 @@
     transition: 0.3s;
     position: fixed;
     left: 0;
-    width: 250px;
+    padding-left: 10px;
+    width: 265px;
     top: 65px;
 }
 
@@ -132,13 +133,17 @@
     /* Rabida list */
 /* -------------------------------------------------------------------------- */
 .rbd-list-sidebar {
+    display: block;
     margin-left: 5px;
     background: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     box-shadow: 0 1px 5px #ddd;
     -moz-box-shadow: 0 1px 5px #ddd;
     -webkit-box-shadow: 0 1px 5px #ddd;
     -o-box-shadow: 0 1px 5px #ddd;
+    &:hover {
+        background-color: #f1f1f1;
+    }
     &:first-of-type {
         border-radius: 7px 7px 0 0; 
     }
