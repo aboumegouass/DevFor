@@ -102,7 +102,7 @@ $('.commun-carousel').owlCarousel({
     }
 });
 
-new Vue ({
+/*new Vue ({
     el: '.page',
     data: {
       name: 'dsdsdsdsd',
@@ -209,4 +209,4 @@ new Vue ({
             this.showR = false;
         }
     }
-  });
+  });*/

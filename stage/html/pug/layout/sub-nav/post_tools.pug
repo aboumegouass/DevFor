@@ -4,12 +4,29 @@ nav.navbar.navbar-expand-xl.navbar-light.bg-white.sub-navbar
     li.nav-item.active
       a.nav-link(href='profile.html')
         |  مجتمع لارافال Laravel
-    li.nav-item
-      a.nav-link(href='rabidas_list.html')
-        i.flaticon-folder-2
-        |  الربائد 
+    li.nav-item.dropdown.right-nav-item
+        a.nav-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+          i.flaticon-user
+          span
+            |  خيارات...
+        .dropdown-menu.notify-menu.user-menu
+          .drop-content
+            img.trick(src='img/trick.png', alt='')
+            ul.menu-list-items
+              li
+                a(href='#')
+                  i.flaticon-user-1
+                  |  الصفحة الشخصية
+              li
+                a(href='#')
+                  i.flaticon-settings
+                  |  الإعدادات
+              li
+                a(href='#')
+                  i.flaticon-logout
+                  |  تسجيل الخروج
   ul.navbar-nav.mr-auto
-    li.nav-item.ml-2
+    li.nav-item.ml-1
       a.btn.btn-prim-out.but-sm(href="#")
         |  متابعة السؤال
     li.nav-item.ml-4
