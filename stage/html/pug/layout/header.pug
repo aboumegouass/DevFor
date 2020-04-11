@@ -4,6 +4,11 @@ nav.navbar.fixed-top.navbar-expand-sm.navbar-light.rbd-navbar.bg-white
   a.navbar-brand.nav-logo
     img(src='img/logo2.png', alt='')
   #navbarSupportedContent.collapse.navbar-collapse
+    .form-inline.search-nav
+      form(action="", method="get")
+        input(type="text", placeholder="البحث في الموقع... مثال: كيف تنشئ منصة عمل")
+        button(type="submit")
+          i.fa.fa-search
     ul.navbar-nav.mr-auto
       li.nav-item.dropdown.right-nav-item
         a.nav-link(href='login.php', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')

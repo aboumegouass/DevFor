@@ -471,6 +471,28 @@ body {
             text-align: justify;
         }
     }
+    .share-question {
+        padding-right: 0;
+        > .nav-item {
+            > .nav-link {
+                font-size: 18px;
+                color: #888;
+                &:hover {
+                    color: #000;
+                }
+            }
+            &:first-child {
+                > .nav-link {
+                    margin-right: 0;
+                }
+            }
+            &.text {
+                color: #555;
+                padding-top: 10px;
+                font-size: 13px;
+            }
+        }
+    }
     .skills-tag {
         padding-right: 0;
         > .nav-item {

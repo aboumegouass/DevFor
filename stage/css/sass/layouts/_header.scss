@@ -111,7 +111,46 @@
 
 }
 .navbar {
-
+  .search-nav {
+    position: relative;
+    width: 640px;
+    min-width: 640px;
+    padding: 20px 0;
+    margin-right: 20px;
+    input {
+      position: absolute;
+      display: block;
+      top: 0;
+      font-size: 13px;
+      font-weight: bold;
+      color: #555;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: 0;
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.062);
+      width: 100%;
+      &::placeholder {
+        color: #ccc;
+      }
+      &:focus {
+        outline: none;
+        &::placeholder {
+          color: #888;
+        }
+      }
+    }
+    button {
+      position: absolute;
+      left: 10px;
+      color: #999;
+      border: 0;
+      top: 7px;
+      background-color: transparent;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
     .nav-link {
       font-weight: bold;
       font-family: 'Jf Flat';
