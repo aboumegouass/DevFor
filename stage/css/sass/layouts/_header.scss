@@ -15,10 +15,10 @@
   margin: 0;
 
   &.rbd-navbar {
-      box-shadow: 0 0 6px #ddd;
-      -o-box-shadow: 0 0 6px #ddd;
-      -moz-box-shadow: 0 0 6px #ddd;
-      -webkit-box-shadow: 0 0 6px #ddd;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.082);
+      -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.082);
+      -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.082);
+      -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.082);
       .navbar-nav {
         padding-right: 10px;
       }
@@ -383,10 +383,10 @@
       left: 25px !important;
       margin-top: 12px;
       border-radius: 10px !important;
-      -webkit-box-shadow: 0 5px 12px #ddd;
-      -o-box-shadow: 0 5px 12px #ddd;
-      -moz-box-shadow: 0 5px 12px #ddd;
-      box-shadow: 0 5px 12px #ddd;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.185);
+      -o-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.185);
+      -moz-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.185);
+      -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.185);
       border: 1px solid #ccc;
       z-index: 500;
       &.share-menu {
