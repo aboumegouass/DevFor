@@ -1,4 +1,4 @@
-.single-page.reply-content.p-3.bg-white
+.single-page.answer-content.p-3.bg-white
     .single-head-top
         img(src="img/madf3366.png", alt="")
         h4.title
@@ -18,6 +18,10 @@
                         | 208
                     button.rate.rate-down
                         i.fa.fa-angle-down
+                .reply-button.center
+                    a.btn.btn-prim.btn-block.but-sm(href="#")
+                        i.fa.fa-reply 
+                        | رد
             .col-10.p-0
                 ul.nav.meta-info
                     li.nav-item
@@ -33,3 +37,7 @@
                 |p {
                 |    color: red 
                 | }
+    hr
+    include reply_to_answer
+    include reply_to_answer
+    include reply_to_answer
