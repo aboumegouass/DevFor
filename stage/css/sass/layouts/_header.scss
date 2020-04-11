@@ -199,6 +199,24 @@
         transition: all 1s;
         transform: translateY(-8px);
         z-index: 991;
+        @media (max-width: 992px) {
+          width: 100%;
+          right: 0;
+          .nav-item {
+            &.left-button {
+              .btn {
+                padding: 6px 10px;
+                span {
+                  display: none;
+                }
+              }
+
+            }
+        }
+        }
+        .navbar-nav {
+          flex-direction: row;
+        }
         &.scrollUp {
             transition: all 1s;
             transform: translateY(-80px);
@@ -803,13 +821,6 @@
   @media (max-width: 820px) {
     .navbar-form {
         display: none;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .navbar-collapse {
-        display: flex !important;
-        flex-direction: row !important;
     }
   }
   
