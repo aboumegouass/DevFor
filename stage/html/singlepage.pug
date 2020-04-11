@@ -12,62 +12,8 @@ html(lang="en")
             .site-row
                 include pug/layout/sidebar
                 .site-grid-8.toggle-sidebar-aside.pb-5
-                    .single-page.p-3.bg-white
-                        .single-head-top
-                            img(src="img/madf3366.png", alt="")
-                            h4.title
-                                | بومقواس عبد الحميد
-                            p.meta
-                                i.flaticon-clock
-                                | ضالها نصف ساعة
-                            .answered-icon
-                                i.flaticon-checked
-                        .single-content
-                            .row
-                                .col-2.p-0
-                                    .raiting-votes.center
-                                        button.rate.rate-up
-                                            i.fa.fa-angle-up
-                                        p.votes-num
-                                            | 208
-                                        button.rate.rate-down
-                                            i.fa.fa-angle-down
-                                .col-10.p-0
-                                    ul.nav.meta-info
-                                        li.nav-item
-                                            a.nav-link(href="#")
-                                                i.flaticon-clock
-                                                | 2100
-                                        li.nav-item
-                                            a.nav-link(href="#")
-                                                i.flaticon-chat
-                                                | 9574
-                                        li.nav-item
-                                            a.nav-link(href="#")
-                                                i.flaticon-reading
-                                                | 9574
-                                    h2.single-title
-                                        | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
-                            p.single-text
-                                | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                            pre.line-numbers(dir="ltr")
-                                code(class="language-css")
-                                    |p {
-                                    |    color: red 
-                                    | }
-                            ul.nav.skills-tag
-                                li.nav-item
-                                    a.nav-link(href="#")
-                                        | HTML
-                                li.nav-item
-                                    a.nav-link(href="#")
-                                        | CSS3
-                                li.nav-item
-                                    a.nav-link(href="#")
-                                        | PHP
-                                li.nav-item
-                                    a.nav-link(href="#")
-                                        | Laravel
+                    include pug/components/single_content
+                    include pug/components/single_content_reply
                     .owl-carousel.commun-carousel.pr-5.pl-5(dir="ltr")
                         include pug/components/community
                         include pug/components/community
