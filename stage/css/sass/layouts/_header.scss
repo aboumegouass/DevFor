@@ -153,12 +153,12 @@
 
         //left: 365px;
         right: 290px;
-        box-shadow: 0 2px 4px #f1f1f1;
-        -o-box-shadow: 0 2px 4px #f1f1f1;
-        -moz-box-shadow: 0 2px 4px #f1f1f1;
-        -webkit-box-shadow: 0 2px 4px #f1f1f1;
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.151);
+        -o-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.151);
+        -moz-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.151);
+        -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.151);
         transition: all 1s;
-        transform: translateY(-7px);
+        transform: translateY(-8px);
         z-index: 991;
         &.scrollUp {
             transition: all 1s;
