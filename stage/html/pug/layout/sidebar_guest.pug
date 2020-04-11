@@ -1,0 +1,21 @@
+.site-grid-2.sidebar-side.toggle-sidebar-aside
+  .ithoub-sidebar
+    .ithoub-sidebar-inner
+      .list-sidebar.position-sticky
+        h3.sidebar-title
+          i.flaticon-lock
+          |  تسجيل الدخول
+        .login-box  
+            form(action="", method="post")
+                label.form-inp-label(for="aside_user_name")
+                    | اسم المستخدم
+                input#aside_user_name.form-inp(type="text", placeholder="اسم المستخدم", name="aside_user_name")
+                label.form-inp-label.mt-3(for="aside_user_pass")
+                    | كلمة المرور
+                input#aside_user_pass.form-inp(type="text", placeholder="كلمة المرور", name="aside_user_pass")
+                .button-send.py-4
+                    button.btn.btn-block.but-sm.btn-prim(type="submit")
+                        | دخول
+        .sidebar-footer
+          p.copy-text
+            | &copy; جميع الحقوق محفوظة لدى #{pagetitle} 2020
