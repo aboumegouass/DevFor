@@ -13,9 +13,33 @@
                 label.form-inp-label.mt-3(for="aside_user_pass")
                     | كلمة المرور
                 input#aside_user_pass.form-inp(type="text", placeholder="كلمة المرور", name="aside_user_pass")
-                .button-send.py-4
-                    button.btn.btn-block.but-sm.btn-prim(type="submit")
+                p.m-0.remember-forget
+                    input#remember_me(type="checkbox", name="remember_me")
+                    label(for="remember_me")
+                        | تذكرني
+                    a(href="")
+                        | نسيت كلمة المرور؟
+
+                .button-send.py-1.center
+                    button.btn.but-sm.btn-prim(type="submit")
                         | دخول
+                hr
+                .center.py-2.login-by
+                    h4.title
+                        | أو تسجيل الدخول بواسطة:
+
+                    a(href="").btn.btn-block.but-sm.btn-black
+                        i.fab.fa-github
+                        span 
+                            | الجيتهاب         
+                    a(href="").btn.btn-block.but-sm.btn-red
+                        i.fab.fa-google
+                        span 
+                            | غوغل      
+                    a(href="").btn.btn-block.but-sm.btn-blue
+                        i.fab.fa-facebook
+                        span 
+                            | فيسبووك               
         .sidebar-footer
           p.copy-text
             | &copy; جميع الحقوق محفوظة لدى #{pagetitle} 2020

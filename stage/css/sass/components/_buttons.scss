@@ -92,6 +92,17 @@
           color: #fff;
         }
       }
+      &.btn-black {
+        background: #222;
+        border: 2px solid #222;
+        color: #fff;
+        font-weight: bold;
+        &:hover {
+          background: darken(#222, 10);
+          border: 2px solid darken(#222, 10);
+          color: #fff;
+        }
+      }
       &.btn-prim-out {
         border: 2px solid $primary;
         color: $primary;

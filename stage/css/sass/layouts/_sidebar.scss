@@ -1,4 +1,35 @@
 
+.ithoub-sidebar {
+    .remember-forget {
+        padding: 10px 0;
+        padding-bottom: 0;
+        color: #777;
+        font-size: 13px;
+        label {
+            margin-left: 10px;
+        }
+        a {
+            color: #555;
+            font-weight: bold;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+    .login-by {
+        .title {
+            color: #777;
+            font-size: 18px;
+        }
+        .btn {
+            span {
+                border-right: 1px solid rgba(255, 255, 255, 0.233);
+                margin-right: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
 .ithoub-sub-sidebar {
     transition: 0.3s;
     position: fixed;
@@ -7,6 +38,7 @@
     width: 265px;
     top: 65px;
 }
+
 @media (max-width: 992px) {
     .left-sidebar-toggle {
         display: flex;
