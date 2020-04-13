@@ -1,7 +1,7 @@
 $('.commun-carousel').owlCarousel({
     rtl:true,
     loop:false,
-    margin:20,
+    margin:15,
     nav:false,
     dots: false,
     lazyLoad:true,
@@ -13,7 +13,7 @@ $('.commun-carousel').owlCarousel({
             items:2
         },
         1200:{
-            items:4
+            items:3
         }
     }
 });

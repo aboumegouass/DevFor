@@ -5,6 +5,23 @@ body {
 .center {
     text-align: center;
 }
+
+
+.devfor-content {
+    &.left-0 {
+        padding-left: 25px;
+    }
+    .commun-carousel, .load-more {
+        width: calc(100% - 275px);
+    }
+    
+}
+.sub-navbar {
+    &.left-0 {
+        margin-left: 35px !important;
+    }
+}
+
 .rbd-form-box {
     input {
         border-radius: 20px;

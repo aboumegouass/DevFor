@@ -10,20 +10,20 @@ html(lang="en")
             .site-row
                 include pug/layout/sidebar
                 .site-grid-10.toggle-sidebar-aside
-                        include pug/layout/sub-nav/post_tools
-                        .devfor-content
-                            include pug/components/single_content
-                            include pug/components/single_content_reply
-                            .owl-carousel.commun-carousel.pr-5.pl-5(dir="ltr")
-                                include pug/components/community
-                                include pug/components/community
-                                include pug/components/community
-                                include pug/components/community
-                                include pug/components/community
-                            .center.load-more
-                                button.btn.but-sm.btn-prim
-                                    | تحميل المزيد
+                    include pug/layout/sub-nav/post_tools
+                    .devfor-content
+                        include pug/components/single_content
+                        include pug/components/single_content_reply
+                        .owl-carousel.commun-carousel.pr-3.pl-3(dir="ltr")
+                            include pug/components/community
+                            include pug/components/community
+                            include pug/components/community
+                            include pug/components/community
+                            include pug/components/community
+                        .center.load-more.py-3
+                            button.btn.but-sm.btn-prim
+                                | تحميل المزيد
                         
-                        include pug/layout/subsidebar
+                include pug/layout/subsidebar
 
         include pug/layout/scripts
