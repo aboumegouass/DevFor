@@ -80,6 +80,7 @@ $('.btn-scroll-top').click(function(){
   $('.btn-sidebar-toggle').on('click', function(){
     $(this).toggleClass('open-active');
     $('.toggle-sidebar-aside, .article-single').toggleClass('nocolumn');
+    $('.ithoub-sub-sidebar').toggleClass('left-0');
   });
 })
 $('.commun-carousel').owlCarousel({
@@ -97,7 +98,7 @@ $('.commun-carousel').owlCarousel({
             items:2
         },
         1200:{
-            items:3
+            items:4
         }
     }
 });

@@ -191,10 +191,9 @@
         position: fixed;
         margin: 0 auto;
         padding: 10px 0;
-        width: 50%;
-
-        //left: 365px;
-        right: 290px;
+        left: 260px;
+        right: 15px;
+        top: -61px;
         box-shadow: 0 2px 7px rgba(0, 0, 0, 0.151);
         -o-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.151);
         -moz-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.151);
@@ -251,14 +250,6 @@
             }
         }
     }
-}
-
-@media (min-width: 992px) {
-  .navbar {
-    &.sub-navbar {
-        width: 772px;
-    }
-  }
 }
 
   /*

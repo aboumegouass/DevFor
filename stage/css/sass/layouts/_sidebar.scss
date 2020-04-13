@@ -33,10 +33,13 @@
 .ithoub-sub-sidebar {
     transition: 0.3s;
     position: fixed;
-    left: 0;
+    left: -25px;
     padding-left: 10px;
-    width: 265px;
-    top: 65px;
+    width: 275px;
+    top: -61px;
+    &.left-0 {
+        left: 0;
+    }
 }
 
 @media (max-width: 992px) {

@@ -80,5 +80,6 @@ $('.btn-scroll-top').click(function(){
   $('.btn-sidebar-toggle').on('click', function(){
     $(this).toggleClass('open-active');
     $('.toggle-sidebar-aside, .article-single').toggleClass('nocolumn');
+    $('.ithoub-sub-sidebar').toggleClass('left-0');
   });
 })
