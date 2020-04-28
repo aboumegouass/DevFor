@@ -13,198 +13,217 @@
     <script src="js/vue.min.js"></script>
   </head>
   <body>
-    <div class="page">
-      <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white"><a class="btn-sidebar-toggle"><i class="flaticon-menu"></i></a><a class="navbar-brand nav-logo"><img src="img/logo2.png" alt=""/></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="form-inline search-nav">
-            <form action="" method="get">
-              <input type="text" placeholder="البحث في الموقع... مثال: كيف تنشئ منصة عمل"/>
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white"><a class="btn-sidebar-toggle"><i class="flaticon-menu"></i></a><a class="navbar-brand nav-logo"><img src="img/logo2.png" alt=""/></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="form-inline search-nav">
+          <form action="" method="get">
+            <input type="text" placeholder="البحث في الموقع... مثال: كيف تنشئ منصة عمل"/>
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown right-nav-item"><a class="nav-link pt-1" href="login.php"><i class="flaticon-plus"></i></a></li>
+          <li class="nav-item right-nav-item"><a class="btn btn-prim but-sm" href="#">إنشاء حساب</a></li>
+        </ul>
+      </div>
+    </nav><span class="btn-scroll-top"><i class="fa fa-angle-up"></i></span>
+    <div class="site-row">
+      <div class="site-grid-2 sidebar-side toggle-sidebar-aside">
+        <div class="ithoub-sidebar">
+          <div class="ithoub-sidebar-inner">
+            <div class="list-sidebar position-sticky">
+              <h3 class="sidebar-title"><i class="flaticon-lock"></i> تسجيل الدخول</h3>
+              <div class="login-box"> 
+                <form action="" method="post">
+                  <label class="form-inp-label" for="aside_user_name">اسم المستخدم</label>
+                  <input class="form-inp" id="aside_user_name" type="text" placeholder="اسم المستخدم" name="aside_user_name"/>
+                  <label class="form-inp-label mt-3" for="aside_user_pass">كلمة المرور</label>
+                  <input class="form-inp" id="aside_user_pass" type="text" placeholder="كلمة المرور" name="aside_user_pass"/>
+                  <p class="m-0 remember-forget">
+                    <input id="remember_me" type="checkbox" name="remember_me"/>
+                    <label for="remember_me">تذكرني</label><a href="">نسيت كلمة المرور؟</a>
+                  </p>
+                  <div class="button-send py-1 center">
+                    <button class="btn but-sm btn-prim" type="submit">دخول</button>
+                  </div>
+                  <hr/>
+                  <div class="center py-2 login-by">
+                    <h4 class="title">أو تسجيل الدخول بواسطة:</h4><a class="btn btn-block but-sm btn-black" href=""><i class="fab fa-github"></i><span>
+                         الجيتهاب         </span></a><a class="btn btn-block but-sm btn-red" href=""><i class="fab fa-google"></i><span>
+                         غوغل      </span></a><a class="btn btn-block but-sm btn-blue" href=""><i class="fab fa-facebook"></i><span>
+                         فيسبووك               </span></a>
+                  </div>
+                </form>
+              </div>
+              <div class="sidebar-footer">
+                <p class="copy-text">&copy; جميع الحقوق محفوظة لدى إثوب 2020</p>
+              </div>
+            </div>
           </div>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown right-nav-item"><a class="nav-link pt-1" href="login.php"><i class="flaticon-plus"></i></a></li>
-            <li class="nav-item right-nav-item"><a class="btn btn-prim but-sm" href="#">إنشاء حساب</a></li>
+        </div>
+      </div>
+      <div class="site-grid-10 toggle-sidebar-aside">
+        <!-- Navbar Area-->
+        <nav class="navbar navbar-expand-xl navbar-light bg-white sub-navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="settings.html"> الأكثر شعبية</a></li>
+            <li class="nav-item"><a class="nav-link" href="reset.html"> الأكثر تقييما</a></li>
+            <li class="nav-item"><a class="nav-link" href="identify.html"> الأحدث</a></li>
+            <li class="nav-item"><a class="nav-link" href="identify.html"> الغير مجاب عنها</a></li>
           </ul>
-        </div>
-      </nav><span class="btn-scroll-top"><i class="fa fa-angle-up"></i></span>
-      <div class="site-row">
-        <div class="site-grid-2 sidebar-side toggle-sidebar-aside">
-          <div class="ithoub-sidebar">
-            <div class="ithoub-sidebar-inner">
-              <div class="list-sidebar position-sticky">
-                <h3 class="sidebar-title"><i class="flaticon-lock"></i> تسجيل الدخول</h3>
-                <div class="login-box"> 
-                  <form action="" method="post">
-                    <label class="form-inp-label" for="aside_user_name">اسم المستخدم</label>
-                    <input class="form-inp" id="aside_user_name" type="text" placeholder="اسم المستخدم" name="aside_user_name"/>
-                    <label class="form-inp-label mt-3" for="aside_user_pass">كلمة المرور</label>
-                    <input class="form-inp" id="aside_user_pass" type="text" placeholder="كلمة المرور" name="aside_user_pass"/>
-                    <p class="m-0 remember-forget">
-                      <input id="remember_me" type="checkbox" name="remember_me"/>
-                      <label for="remember_me">تذكرني</label><a href="">نسيت كلمة المرور؟</a>
-                    </p>
-                    <div class="button-send py-1 center">
-                      <button class="btn but-sm btn-prim" type="submit">دخول</button>
-                    </div>
-                    <hr/>
-                    <div class="center py-2 login-by">
-                      <h4 class="title">أو تسجيل الدخول بواسطة:</h4><a class="btn btn-block but-sm btn-black" href=""><i class="fab fa-github"></i><span>
-                           الجيتهاب         </span></a><a class="btn btn-block but-sm btn-red" href=""><i class="fab fa-google"></i><span>
-                           غوغل      </span></a><a class="btn btn-block but-sm btn-blue" href=""><i class="fab fa-facebook"></i><span>
-                           فيسبووك               </span></a>
-                    </div>
-                  </form>
+        </nav>
+        <div class="devfor-content">
+          <div class="post-row">
+            <div class="header-post"><img src="img/user3.png" alt=""/>
+              <h4 class="title"><a href="">بومقواس عبد الحميد</a></h4>
+              <p class="meta"><i class="flaticon-clock"></i>منذ نصف ساعة</p>
+              <div class="answered-icon"><i class="flaticon-checked"></i></div>
+            </div>
+            <div class="content-post">
+              <div class="row">
+                <div class="col-1 p-0">
+                  <div class="raiting-votes center">
+                    <button class="rate rate-up"><i class="fa fa-angle-up"></i></button>
+                    <p class="votes-num">208</p>
+                    <button class="rate rate-down"><i class="fa fa-angle-down"></i></button>
+                  </div>
                 </div>
-                <div class="sidebar-footer">
-                  <p class="copy-text">&copy; جميع الحقوق محفوظة لدى إثوب 2020</p>
+                <div class="col-11 p-0">
+                  <p class="communt-parent"><a href="#"><img src="img/naqr_icx.png" alt=""/>مجتمع ال CSS & HTML</a></p>
+                  <h4 class="post-title"><a href="singlepage.html">كيفاه نبيراتي الموقع نتاع النازا بواسطة HTML كيفاه نبيراتي الموقع نتاع النازا بواسطة HTML</a></h4>
+                  <ul class="nav skills-tag">
+                    <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CSS3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PHP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Laravel</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-post">
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-chat"></i>2056</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-reading"></i>9834</a></li>
+                <li class="nav-item mr-auto"><a class="nav-link read-more" href="#"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="post-row">
+            <div class="header-post"><img src="img/user3.png" alt=""/>
+              <h4 class="title"><a href="">بومقواس عبد الحميد</a></h4>
+              <p class="meta"><i class="flaticon-clock"></i>منذ نصف ساعة</p>
+              <div class="answered-icon"><i class="flaticon-checked"></i></div>
+            </div>
+            <div class="content-post">
+              <div class="row">
+                <div class="col-1 p-0">
+                  <div class="raiting-votes center">
+                    <button class="rate rate-up"><i class="fa fa-angle-up"></i></button>
+                    <p class="votes-num">208</p>
+                    <button class="rate rate-down"><i class="fa fa-angle-down"></i></button>
+                  </div>
+                </div>
+                <div class="col-11 p-0">
+                  <p class="communt-parent"><a href="#"><img src="img/naqr_icx.png" alt=""/>مجتمع ال CSS & HTML</a></p>
+                  <h4 class="post-title"><a href="singlepage.html">كيفاه نبيراتي الموقع نتاع النازا بواسطة HTML كيفاه نبيراتي الموقع نتاع النازا بواسطة HTML</a></h4>
+                  <ul class="nav skills-tag">
+                    <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CSS3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PHP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Laravel</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-post">
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-chat"></i>2056</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-reading"></i>9834</a></li>
+                <li class="nav-item mr-auto"><a class="nav-link read-more" href="#"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="owl-carousel commun-carousel pr-3 pl-3" dir="ltr">
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
+                </div>
+              </div>
+            </div>
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
+                </div>
+              </div>
+            </div>
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
+                </div>
+              </div>
+            </div>
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
+                </div>
+              </div>
+            </div>
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="site-grid-10 toggle-sidebar-aside">
-          <!-- Navbar Area-->
-          <nav class="navbar navbar-expand-xl navbar-light bg-white sub-navbar">
-            <ul class="navbar-nav">
-              <li class="nav-item active"><a class="nav-link" href="settings.html"> الأكثر شعبية</a></li>
-              <li class="nav-item"><a class="nav-link" href="reset.html"> الأكثر تقييما</a></li>
-              <li class="nav-item"><a class="nav-link" href="identify.html"> الأحدث</a></li>
-              <li class="nav-item"><a class="nav-link" href="identify.html"> الغير مجاب عنها</a></li>
-            </ul>
-          </nav>
-          <div class="devfor-content">
-            <div class="post-row">
-              <div class="header-post"><img src="img/user3.png" alt=""/>
-                <h4 class="title"><a href="">بومقواس عبد الحميد</a></h4>
-                <p class="meta"><i class="flaticon-clock"></i>منذ نصف ساعة</p>
-                <div class="answered-icon"><i class="flaticon-checked"></i></div>
-              </div>
-              <div class="content-post">
-                <div class="row">
-                  <div class="col-1 p-0">
-                    <div class="raiting-votes center">
-                      <button class="rate rate-up"><i class="fa fa-angle-up"></i></button>
-                      <p class="votes-num">208</p>
-                      <button class="rate rate-down"><i class="fa fa-angle-down"></i></button>
-                    </div>
-                  </div>
-                  <div class="col-11 p-0">
-                    <p class="communt-parent"><a href="#"><img src="img/naqr_icx.png" alt=""/>مجتمع ال CSS & HTML</a></p>
-                    <h4 class="post-title"><a href="singlepage.html">كيفاه نبيراتي الموقع نتاع النازا بواسطة HTML كيفاه نبيراتي الموقع نتاع النازا بواسطة HTML</a></h4>
-                    <ul class="nav skills-tag">
-                      <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">CSS3</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">PHP</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Laravel</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-post">
-                <ul class="nav">
-                  <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-chat"></i>2056</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-reading"></i>9834</a></li>
-                  <li class="nav-item mr-auto"><a class="nav-link read-more" href="#"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="post-row">
-              <div class="header-post"><img src="img/user3.png" alt=""/>
-                <h4 class="title"><a href="">بومقواس عبد الحميد</a></h4>
-                <p class="meta"><i class="flaticon-clock"></i>منذ نصف ساعة</p>
-                <div class="answered-icon"><i class="flaticon-checked"></i></div>
-              </div>
-              <div class="content-post">
-                <div class="row">
-                  <div class="col-1 p-0">
-                    <div class="raiting-votes center">
-                      <button class="rate rate-up"><i class="fa fa-angle-up"></i></button>
-                      <p class="votes-num">208</p>
-                      <button class="rate rate-down"><i class="fa fa-angle-down"></i></button>
-                    </div>
-                  </div>
-                  <div class="col-11 p-0">
-                    <p class="communt-parent"><a href="#"><img src="img/naqr_icx.png" alt=""/>مجتمع ال CSS & HTML</a></p>
-                    <h4 class="post-title"><a href="singlepage.html">كيفاه نبيراتي الموقع نتاع النازا بواسطة HTML كيفاه نبيراتي الموقع نتاع النازا بواسطة HTML</a></h4>
-                    <ul class="nav skills-tag">
-                      <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">CSS3</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">PHP</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#">Laravel</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-post">
-                <ul class="nav">
-                  <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-chat"></i>2056</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-reading"></i>9834</a></li>
-                  <li class="nav-item mr-auto"><a class="nav-link read-more" href="#"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="owl-carousel commun-carousel pr-3 pl-3" dir="ltr">
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="center load-more py-4">
-              <button class="btn but-sm btn-prim">تحميل المزيد</button>
-            </div>
+          <div class="center load-more py-4">
+            <button class="btn but-sm btn-prim">تحميل المزيد</button>
           </div>
         </div>
         <!--.site-grid-2-->
         <div class="ithoub-sub-sidebar">
           <div class="inner-sub-sidebar">
-            <div class="top-4-comunity">
+            <div class="top-4-users">
+              <h3 class="sidebar-title"><i class="flaticon-user"></i> أفضل المستخدمين</h3><a class="rbd-list-sidebar" href="#">
+                <div class="rbd-item"><img src="img/madf3366.png" alt=""/>
+                  <h3 class="rbd-title">مستخدم جديد</h3>
+                  <ul class="rbd-meta">
+                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
+                  </ul>
+                </div></a><a class="rbd-list-sidebar" href="#">
+                <div class="rbd-item"><img src="img/user3.jpg" alt=""/>
+                  <h3 class="rbd-title">عبد المحسن ماضي</h3>
+                  <ul class="rbd-meta">
+                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
+                  </ul>
+                </div></a><a class="rbd-list-sidebar" href="#">
+                <div class="rbd-item"><img src="img/user2.png" alt=""/>
+                  <h3 class="rbd-title">عبد الحميد بومقواس</h3>
+                  <ul class="rbd-meta">
+                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
+                  </ul>
+                </div></a>
+            </div>
+            <div class="top-4-comunity position-sticky sticky-top">
               <h3 class="sidebar-title"><i class="flaticon-heart"></i> أفضل المجتمعات</h3>
               <div class="owl-carousel aside-carousel">
                 <div class="community-post center">
@@ -238,33 +257,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="top-4-users">
-              <h3 class="sidebar-title"><i class="flaticon-user"></i> أفضل المستخدمين</h3><a class="rbd-list-sidebar" href="#">
-                <div class="rbd-item"><img src="img/madf3366.png" alt=""/>
-                  <h3 class="rbd-title">مستخدم جديد</h3>
-                  <ul class="rbd-meta">
-                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
-                  </ul>
-                </div></a><a class="rbd-list-sidebar" href="#">
-                <div class="rbd-item"><img src="img/user3.png" alt=""/>
-                  <h3 class="rbd-title">عبد الله الهادي</h3>
-                  <ul class="rbd-meta">
-                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
-                  </ul>
-                </div></a><a class="rbd-list-sidebar" href="#">
-                <div class="rbd-item"><img src="img/user3.jpg" alt=""/>
-                  <h3 class="rbd-title">عبد المحسن ماضي</h3>
-                  <ul class="rbd-meta">
-                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
-                  </ul>
-                </div></a><a class="rbd-list-sidebar" href="#">
-                <div class="rbd-item"><img src="img/user2.png" alt=""/>
-                  <h3 class="rbd-title">عبد الحميد بومقواس</h3>
-                  <ul class="rbd-meta">
-                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
-                  </ul>
-                </div></a>
             </div>
           </div>
         </div>

@@ -1,5 +1,36 @@
-
+@keyframes toggle_animate {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -700px;
+    }
+}
+@keyframes toggle_animate_inv {
+    100% {
+        right: 0;
+    }
+    0% {
+        right: -700px;
+    }
+}
 .ithoub-sidebar {
+    position: fixed;
+    right: 0;
+    width: 255px;
+    right: 0;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: -7px 4px 8px rgba(0, 0, 0, 0.075);
+    top: 56px;
+    .ithoub-sidebar-inner {
+        padding: 15px !important;
+    }
+    //animation: toggle_animate_inv 300ms;
+    &.toggle-right {
+        right: -700px;
+        //animation: toggle_animate 300ms;
+    }
     .remember-forget {
         padding: 10px 0;
         padding-bottom: 0;
@@ -29,14 +60,31 @@
             }
         }
     }
+    @media (max-width: 992px) {
+        position: fixed;
+        right: 0;
+        width: calc(100%);
+        animation: toggle_animate_inv 500ms;
+        background-color: #fff;
+        z-index: 1890;
+        top: 56px;
+        padding: 15px;
+        box-shadow: -7px 7px 15px rgba(0, 0, 0, 0.075);
+        &.mob-aside-toggle {
+            right: -700px;
+            animation: toggle_animate 500ms;
+        }
+
+    }
+    
 }
 .ithoub-sub-sidebar {
     transition: 0.3s;
     position: fixed;
-    left: -0px;
+    left: 5px;
     padding-left: 10px;
     width: 275px;
-    top: 61px;
+    top: 60px;
     &.left-0 {
         left: 0;
     }

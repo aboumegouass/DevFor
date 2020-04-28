@@ -1,20 +1,20 @@
 body {
     padding-top: 65px;
     overflow-y: scroll;
+
 }
+
 .center {
     text-align: center;
 }
-
-
 .devfor-content {
+    width: calc(100% - 255px);
+    float: left;
     &.left-0 {
         padding-left: 25px;
+        float: right;
+        //width: 100%;
     }
-    .commun-carousel, .load-more {
-        width: calc(100% - 275px);
-    }
-    
 }
 .sub-navbar {
     &.left-0 {
@@ -58,29 +58,14 @@ body {
     }
     .site-grid-2 {
         width: 255px;
-        transition: 0.3s;
         &.sidebar-side {
-            position: fixed;
-            background: #fff;
-            top: 59px;
-            transition: 0.3s;
-            transform: translateX(-7px);
-            height: 100%;
-            box-shadow: -1px 0 2px #ddd;
             &.nocolumn {
-                transition: 0.3s;
-                transform: translateX(255px);
+                width: 0;
             }
         }
     }
     .site-grid-8, .site-grid-10{
         will-change: width;
-        transition: 0.3s;
-        transform: translateX(-255px);
-        &.nocolumn {
-            transition: 0.3s;
-            transform: translateX(0);
-        }
     }
     .site-grid-8{
         width: calc(83.333334% - 285px);
@@ -95,24 +80,16 @@ body {
         }
     }
 }
-.ithoub-content {
-    padding: 20px 30px;
-    .sidebar-title {
-        margin-bottom: 15px;
-        color: #333;
-    }
-    .tool-btn-more {
-        float: left;
-        color: #777;
-        [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-        [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-            font-size: 20px;
-        }
-        &:hover {
-            color: #000;
+.devfor-content {
+    @media (max-width: 992px) {
+        width: 100%;
+        &.left-0 {
+            width: 100%;
+            padding: 0;
         }
     }
 }
+
 /*
 ----------------------------------------------------------------------------------------------
     Profile Style
@@ -388,11 +365,12 @@ body {
     -webkit-box-shadow: 2px 3px 12px #f5f5f5;
     
     @media (max-width: 992px) {
-        margin: 15px 4px;
+        margin: 15px 0;
+        width: 100%;
     }
 
     &:first-of-type {
-        margin-top: 73px;
+        margin-top: 60px;
     }
     &:hover {
         transition: all 300ms;

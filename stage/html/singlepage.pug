@@ -5,24 +5,23 @@ html(lang="en")
         include pug/layout/styles
         script(src="js/vue.min.js")
     body
-        .page
-            include pug/layout/header
-            .site-row
-                include pug/layout/sidebar
-                .site-grid-10.toggle-sidebar-aside
-                    include pug/layout/sub-nav/post_tools
-                    .devfor-content
-                        include pug/components/single_content
-                        include pug/components/single_content_reply
-                        .owl-carousel.commun-carousel.pr-3.pl-3(dir="ltr")
-                            include pug/components/community
-                            include pug/components/community
-                            include pug/components/community
-                            include pug/components/community
-                            include pug/components/community
-                        .center.load-more.py-3
-                            button.btn.but-sm.btn-prim
-                                | تحميل المزيد
+        include pug/layout/header
+        .site-row
+            include pug/layout/sidebar
+            .site-grid-10.toggle-sidebar-aside
+                include pug/layout/sub-nav/post_tools
+                .devfor-content
+                    include pug/components/single_content
+                    include pug/components/single_content_reply
+                    .owl-carousel.commun-carousel.pr-3.pl-3(dir="ltr")
+                        include pug/components/community
+                        include pug/components/community
+                        include pug/components/community
+                        include pug/components/community
+                        include pug/components/community
+                    .center.load-more.py-3
+                        button.btn.but-sm.btn-prim
+                            | تحميل المزيد
                         
                 include pug/layout/subsidebar
 

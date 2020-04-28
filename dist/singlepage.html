@@ -13,29 +13,70 @@
     <script src="js/vue.min.js"></script>
   </head>
   <body>
-    <div class="page">
-      <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white"><a class="btn-sidebar-toggle"><i class="flaticon-menu"></i></a><a class="navbar-brand nav-logo"><img src="img/logo2.png" alt=""/></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="form-inline search-nav">
-            <form action="" method="get">
-              <input type="text" placeholder="البحث في الموقع... مثال: كيف تنشئ منصة عمل"/>
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="login.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-notification"></i></a>
-              <div class="dropdown-menu notify-menu notification-list">
-                <div class="drop-header">
-                  <h3 class="drop-title"> <i class="flaticon-notification"> </i>الإشعارات</h3>
-                </div>
-                <div class="drop-content">
-                  <ul class="menu-list-items menu-list-notification">
-                    <li v-for="notifItem in notif"><a href="#"><span v-html="notifItem.profile"></span><span v-html="notifItem.title"></span><span class="noty-time" v-html="notifItem.ago"></span><span class="noty-icon" v-html="notifItem.icon"></span></a></li>
-                  </ul><a class="see-all-link" href="#">كل الإشعارات...</a>
-                </div>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white"><a class="btn-sidebar-toggle"><i class="flaticon-menu"></i></a><a class="navbar-brand nav-logo"><img src="img/logo2.png" alt=""/></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="form-inline search-nav">
+          <form action="" method="get">
+            <input type="text" placeholder="البحث في الموقع... مثال: كيف تنشئ منصة عمل"/>
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="login.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-notification"></i></a>
+            <div class="dropdown-menu notify-menu notification-list">
+              <div class="drop-header">
+                <h3 class="drop-title"> <i class="flaticon-notification"> </i>الإشعارات</h3>
               </div>
-            </li>
-            <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="create.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-user"></i><span> عبد الحميد بومقواس</span></a>
+              <div class="drop-content">
+                <ul class="menu-list-items menu-list-notification">
+                  <li v-for="notifItem in notif"><a href="#"><span v-html="notifItem.profile"></span><span v-html="notifItem.title"></span><span class="noty-time" v-html="notifItem.ago"></span><span class="noty-icon" v-html="notifItem.icon"></span></a></li>
+                </ul><a class="see-all-link" href="#">كل الإشعارات...</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="create.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-user"></i><span> عبد الحميد بومقواس</span></a>
+            <div class="dropdown-menu notify-menu user-menu">
+              <div class="drop-content"><img class="trick" src="img/trick.png" alt=""/>
+                <ul class="menu-list-items">
+                  <li><a href="#"><i class="flaticon-user-1"></i> الصفحة الشخصية</a></li>
+                  <li><a href="#"><i class="flaticon-settings"></i> الإعدادات</a></li>
+                  <li><a href="#"><i class="flaticon-logout"></i> تسجيل الخروج</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav><span class="btn-scroll-top"><i class="fa fa-angle-up"></i></span>
+    <div class="site-row">
+      <div class="site-grid-2 sidebar-side toggle-sidebar-aside">
+        <div class="ithoub-sidebar">
+          <div class="ithoub-sidebar-inner">
+            <div class="ithoub-user-info">
+              <div class="ithoub-user-avatar"><img src="img/abdellah.png" alt=""/></div>
+              <div class="ithoub-user-content">
+                <h3 class="user-title">عبد الحميد بومقواس</h3>
+                <p class="user-mata">@aboumegouass</p>
+              </div>
+            </div>
+            <div class="list-sidebar position-sticky"><a class="link-item active" href="index.html"><i class="flaticon-popular"></i> آخر الأسئلة</a>
+              <h3 class="sidebar-title has-menu" id="profile-list-btn"><i class="flaticon-quotes"></i> المجتمعات<i class="fa fa-caret-down mr-2 arrow-menu"></i></h3>
+              <div class="sub-menu" id="profile-list"><a class="sub-item" href="profile.html"><i class="flaticon-document"></i> مجتمع اللارافال Laravel</a><a class="sub-item" href="rabidas_list.html"><i class="flaticon-document"></i> مجتمع الديجانغو Dijango </a><a class="sub-item" href="articles_list.html"><i class="flaticon-document"></i> مجتمع الفلاتر Flutter</a><a class="sub-item" href="posts_list.html"><i class="flaticon-document"></i> مجتمع الإكسامارين Xamarine</a></div>
+              <h3 class="sidebar-title has-menu" id="myrabida-list-btn"><i class="flaticon-settings-1"></i> الإعدادات <i class="fa fa-caret-down mr-2 arrow-menu"></i></h3>
+              <div class="sub-menu" id="myrabida-list"><a class="sub-item" href="settings.html"><i class="flaticon-document"></i> تعديل المعلومات الشخصية</a><a class="sub-item" href=""><i class="flaticon-document"></i> إعادة تعيين كلمة المرور</a><a class="sub-item" href=""><i class="flaticon-document"></i> إعادة تعيين اسم المستخدم</a><a class="sub-item" href=""><i class="flaticon-document"></i> تأكيد الهوية</a></div><a class="link-item" href=""><i class="flaticon-settings-1"></i> سياسة الخصوصية</a><a class="link-item" href=""><i class="flaticon-settings-1"></i> شروط الإستخدام</a>
+              <div class="sidebar-footer">
+                <p class="copy-text">&copy; جميع الحقوق محفوظة لدى إثوب 2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="site-grid-10 toggle-sidebar-aside">
+        <!-- Navbar Area-->
+        <nav class="navbar navbar-expand-xl navbar-light bg-white sub-navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="profile.html"> مجتمع لارافال Laravel</a></li>
+            <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-settings"></i><span> خيارات...</span></a>
               <div class="dropdown-menu notify-menu user-menu">
                 <div class="drop-content"><img class="trick" src="img/trick.png" alt=""/>
                   <ul class="menu-list-items">
@@ -47,242 +88,220 @@
               </div>
             </li>
           </ul>
-        </div>
-      </nav><span class="btn-scroll-top"><i class="fa fa-angle-up"></i></span>
-      <div class="site-row">
-        <div class="site-grid-2 sidebar-side toggle-sidebar-aside">
-          <div class="ithoub-sidebar">
-            <div class="ithoub-sidebar-inner">
-              <div class="ithoub-user-info">
-                <div class="ithoub-user-avatar"><img src="img/abdellah.png" alt=""/></div>
-                <div class="ithoub-user-content">
-                  <h3 class="user-title">عبد الحميد بومقواس</h3>
-                  <p class="user-mata">@aboumegouass</p>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ml-1 left-button"><a class="btn btn-prim-out but-sm" href="#"><i class="fa fa-rss"></i><span> متابعة السؤال</span></a></li>
+            <li class="nav-item ml-1 left-button"><a class="btn btn-prim but-sm" href="#"><i class="fa fa-plus-circle"></i><span> إضافة جواب</span></a></li>
+            <li class="nav-item left-sidebar-toggle ml-4 left-button"><a class="left-sidebar-toggle-btn nav-link" href="#"><i class="flaticon-menu"></i></a></li>
+          </ul>
+        </nav>
+        <div class="devfor-content">
+          <div class="single-page p-3 bg-white">
+            <div class="single-head-top"><img src="img/madf3366.png" alt=""/>
+              <h4 class="title">بومقواس عبد الحميد</h4>
+              <p class="meta"><i class="flaticon-clock"></i>ضالها نصف ساعة</p>
+              <div class="answered-icon"><i class="flaticon-checked"></i></div>
+            </div>
+            <div class="single-content">
+              <div class="row">
+                <div class="col-2 p-0">
+                  <div class="raiting-votes center">
+                    <button class="rate rate-up"><i class="fa fa-angle-up"></i></button>
+                    <p class="votes-num">208</p>
+                    <button class="rate rate-down"><i class="fa fa-angle-down"></i></button>
+                  </div>
+                </div>
+                <div class="col-10 p-0">
+                  <ul class="nav meta-info">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-clock"></i>2100</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-chat"></i>9574</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-reading"></i>9574</a></li>
+                  </ul>
+                  <h2 class="single-title">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد</h2>
+                  <ul class="nav share-question">
+                    <li class="nav-item text">مشاركة السؤال في مواقع أخرى</li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-github"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-stack-overflow"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-quora"></i></a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="list-sidebar position-sticky"><a class="link-item active" href="index.html"><i class="flaticon-popular"></i> آخر الأسئلة</a>
-                <h3 class="sidebar-title has-menu" id="profile-list-btn"><i class="flaticon-quotes"></i> المجتمعات<i class="fa fa-caret-down mr-2 arrow-menu"></i></h3>
-                <div class="sub-menu" id="profile-list"><a class="sub-item" href="profile.html"><i class="flaticon-document"></i> مجتمع اللارافال Laravel</a><a class="sub-item" href="rabidas_list.html"><i class="flaticon-document"></i> مجتمع الديجانغو Dijango </a><a class="sub-item" href="articles_list.html"><i class="flaticon-document"></i> مجتمع الفلاتر Flutter</a><a class="sub-item" href="posts_list.html"><i class="flaticon-document"></i> مجتمع الإكسامارين Xamarine</a></div>
-                <h3 class="sidebar-title has-menu" id="myrabida-list-btn"><i class="flaticon-settings-1"></i> الإعدادات <i class="fa fa-caret-down mr-2 arrow-menu"></i></h3>
-                <div class="sub-menu" id="myrabida-list"><a class="sub-item" href="settings.html"><i class="flaticon-document"></i> تعديل المعلومات الشخصية</a><a class="sub-item" href=""><i class="flaticon-document"></i> إعادة تعيين كلمة المرور</a><a class="sub-item" href=""><i class="flaticon-document"></i> إعادة تعيين اسم المستخدم</a><a class="sub-item" href=""><i class="flaticon-document"></i> تأكيد الهوية</a></div><a class="link-item" href=""><i class="flaticon-settings-1"></i> سياسة الخصوصية</a><a class="link-item" href=""><i class="flaticon-settings-1"></i> شروط الإستخدام</a>
-                <div class="sidebar-footer">
-                  <p class="copy-text">&copy; جميع الحقوق محفوظة لدى إثوب 2020</p>
+              <p class="single-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+              <pre class="line-numbers" dir="ltr"><code class="language-css">p {
+   color: red 
+}</code></pre>
+              <ul class="nav skills-tag">
+                <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CSS3</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">PHP</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Laravel</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="single-page answer-content p-3 bg-white">
+            <div class="single-head-top"><img src="img/madf3366.png" alt=""/>
+              <h4 class="title">بومقواس عبد الحميد</h4>
+              <p class="meta"><i class="flaticon-clock"></i>ضالها نصف ساعة</p>
+              <div class="answered-icon"><i class="flaticon-checked"></i></div>
+            </div>
+            <div class="single-content">
+              <div class="row">
+                <div class="col-2 p-0">
+                  <div class="raiting-votes center">
+                    <button class="rate rate-up"><i class="fa fa-angle-up"></i></button>
+                    <p class="votes-num">208</p>
+                    <button class="rate rate-down"><i class="fa fa-angle-down"></i></button>
+                  </div>
+                  <div class="reply-button center"><a class="btn btn-prim btn-block but-sm" href="#"><i class="fa fa-reply"> </i>رد</a></div>
+                </div>
+                <div class="col-10 p-0">
+                  <ul class="nav meta-info">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-clock"></i>2100</a></li>
+                  </ul>
+                  <h3 class="single-title">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد</h3>
+                </div>
+              </div>
+              <p class="single-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+              <pre class="line-numbers" dir="ltr"><code class="language-css">p {
+   color: red 
+}</code></pre>
+            </div>
+            <hr/>
+            <div class="reply-to-answer">
+              <div class="row">
+                <div class="col-3 p-0">
+                  <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
+                    <h4 class="title">عبد الله الهادي</h4>
+                    <p class="meta">عضو مميز</p>
+                  </div>
+                </div>
+                <div class="col-9 p-0">
+                  <ul class="nav reply-tools justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-heart"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
+                  </ul>
+                  <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reply-to-answer">
+              <div class="row">
+                <div class="col-3 p-0">
+                  <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
+                    <h4 class="title">عبد الله الهادي</h4>
+                    <p class="meta">عضو مميز</p>
+                  </div>
+                </div>
+                <div class="col-9 p-0">
+                  <ul class="nav reply-tools justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-heart"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
+                  </ul>
+                  <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reply-to-answer">
+              <div class="row">
+                <div class="col-3 p-0">
+                  <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
+                    <h4 class="title">عبد الله الهادي</h4>
+                    <p class="meta">عضو مميز</p>
+                  </div>
+                </div>
+                <div class="col-9 p-0">
+                  <ul class="nav reply-tools justify-content-end">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-heart"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
+                    <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
+                  </ul>
+                  <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="site-grid-10 toggle-sidebar-aside">
-          <!-- Navbar Area-->
-          <nav class="navbar navbar-expand-xl navbar-light bg-white sub-navbar">
-            <ul class="navbar-nav">
-              <li class="nav-item active"><a class="nav-link" href="profile.html"> مجتمع لارافال Laravel</a></li>
-              <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-settings"></i><span> خيارات...</span></a>
-                <div class="dropdown-menu notify-menu user-menu">
-                  <div class="drop-content"><img class="trick" src="img/trick.png" alt=""/>
-                    <ul class="menu-list-items">
-                      <li><a href="#"><i class="flaticon-user-1"></i> الصفحة الشخصية</a></li>
-                      <li><a href="#"><i class="flaticon-settings"></i> الإعدادات</a></li>
-                      <li><a href="#"><i class="flaticon-logout"></i> تسجيل الخروج</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item ml-1 left-button"><a class="btn btn-prim-out but-sm" href="#"><i class="fa fa-rss"></i><span> متابعة السؤال</span></a></li>
-              <li class="nav-item ml-1 left-button"><a class="btn btn-prim but-sm" href="#"><i class="fa fa-plus-circle"></i><span> إضافة جواب</span></a></li>
-              <li class="nav-item left-sidebar-toggle ml-4 left-button"><a class="left-sidebar-toggle-btn nav-link" href="#"><i class="flaticon-menu"></i></a></li>
-            </ul>
-          </nav>
-          <div class="devfor-content">
-            <div class="single-page p-3 bg-white">
-              <div class="single-head-top"><img src="img/madf3366.png" alt=""/>
-                <h4 class="title">بومقواس عبد الحميد</h4>
-                <p class="meta"><i class="flaticon-clock"></i>ضالها نصف ساعة</p>
-                <div class="answered-icon"><i class="flaticon-checked"></i></div>
-              </div>
-              <div class="single-content">
-                <div class="row">
-                  <div class="col-2 p-0">
-                    <div class="raiting-votes center">
-                      <button class="rate rate-up"><i class="fa fa-angle-up"></i></button>
-                      <p class="votes-num">208</p>
-                      <button class="rate rate-down"><i class="fa fa-angle-down"></i></button>
-                    </div>
-                  </div>
-                  <div class="col-10 p-0">
-                    <ul class="nav meta-info">
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-clock"></i>2100</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-chat"></i>9574</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-reading"></i>9574</a></li>
-                    </ul>
-                    <h2 class="single-title">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد</h2>
-                    <ul class="nav share-question">
-                      <li class="nav-item text">مشاركة السؤال في مواقع أخرى</li>
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-github"></i></a></li>
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-stack-overflow"></i></a></li>
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-quora"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <p class="single-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
-                <pre class="line-numbers" dir="ltr"><code class="language-css">p {
-   color: red 
-}</code></pre>
-                <ul class="nav skills-tag">
-                  <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">CSS3</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">PHP</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#">Laravel</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="single-page answer-content p-3 bg-white">
-              <div class="single-head-top"><img src="img/madf3366.png" alt=""/>
-                <h4 class="title">بومقواس عبد الحميد</h4>
-                <p class="meta"><i class="flaticon-clock"></i>ضالها نصف ساعة</p>
-                <div class="answered-icon"><i class="flaticon-checked"></i></div>
-              </div>
-              <div class="single-content">
-                <div class="row">
-                  <div class="col-2 p-0">
-                    <div class="raiting-votes center">
-                      <button class="rate rate-up"><i class="fa fa-angle-up"></i></button>
-                      <p class="votes-num">208</p>
-                      <button class="rate rate-down"><i class="fa fa-angle-down"></i></button>
-                    </div>
-                    <div class="reply-button center"><a class="btn btn-prim btn-block but-sm" href="#"><i class="fa fa-reply"> </i>رد</a></div>
-                  </div>
-                  <div class="col-10 p-0">
-                    <ul class="nav meta-info">
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-clock"></i>2100</a></li>
-                    </ul>
-                    <h3 class="single-title">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد</h3>
-                  </div>
-                </div>
-                <p class="single-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
-                <pre class="line-numbers" dir="ltr"><code class="language-css">p {
-   color: red 
-}</code></pre>
-              </div>
-              <hr/>
-              <div class="reply-to-answer">
-                <div class="row">
-                  <div class="col-3 p-0">
-                    <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
-                      <h4 class="title">عبد الله الهادي</h4>
-                      <p class="meta">عضو مميز</p>
-                    </div>
-                  </div>
-                  <div class="col-9 p-0">
-                    <ul class="nav reply-tools justify-content-end">
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-heart"></i></a></li>
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
-                      <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
-                    </ul>
-                    <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="reply-to-answer">
-                <div class="row">
-                  <div class="col-3 p-0">
-                    <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
-                      <h4 class="title">عبد الله الهادي</h4>
-                      <p class="meta">عضو مميز</p>
-                    </div>
-                  </div>
-                  <div class="col-9 p-0">
-                    <ul class="nav reply-tools justify-content-end">
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-heart"></i></a></li>
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
-                      <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
-                    </ul>
-                    <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="reply-to-answer">
-                <div class="row">
-                  <div class="col-3 p-0">
-                    <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
-                      <h4 class="title">عبد الله الهادي</h4>
-                      <p class="meta">عضو مميز</p>
-                    </div>
-                  </div>
-                  <div class="col-9 p-0">
-                    <ul class="nav reply-tools justify-content-end">
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-heart"></i></a></li>
-                      <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
-                      <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
-                    </ul>
-                    <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
-                  </div>
+          <div class="owl-carousel commun-carousel pr-3 pl-3" dir="ltr">
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
                 </div>
               </div>
             </div>
-            <div class="owl-carousel commun-carousel pr-3 pl-3" dir="ltr">
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
-                </div>
-              </div>
-              <div class="community-post center">
-                <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
-                <div class="community-body">
-                  <h4 class="title">مجتمع لارافال Laravel</h4>
-                  <p class="meta">عدد المتابعين : 2500</p>
-                  <div class="buttons">
-                    <button class="btn but-sm btn-prim">متابعة</button>
-                  </div>
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
                 </div>
               </div>
             </div>
-            <div class="center load-more py-3">
-              <button class="btn but-sm btn-prim">تحميل المزيد</button>
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
+                </div>
+              </div>
             </div>
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
+                </div>
+              </div>
+            </div>
+            <div class="community-post center">
+              <div class="community-head" style="background-image: url('img/3293c688707567.5dde6a36274b8.png')"><img src="img/it_ic.png" alt=""/></div>
+              <div class="community-body">
+                <h4 class="title">مجتمع لارافال Laravel</h4>
+                <p class="meta">عدد المتابعين : 2500</p>
+                <div class="buttons">
+                  <button class="btn but-sm btn-prim">متابعة</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="center load-more py-3">
+            <button class="btn but-sm btn-prim">تحميل المزيد</button>
           </div>
         </div>
         <!--.site-grid-2-->
         <div class="ithoub-sub-sidebar">
           <div class="inner-sub-sidebar">
-            <div class="top-4-comunity">
+            <div class="top-4-users">
+              <h3 class="sidebar-title"><i class="flaticon-user"></i> أفضل المستخدمين</h3><a class="rbd-list-sidebar" href="#">
+                <div class="rbd-item"><img src="img/madf3366.png" alt=""/>
+                  <h3 class="rbd-title">مستخدم جديد</h3>
+                  <ul class="rbd-meta">
+                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
+                  </ul>
+                </div></a><a class="rbd-list-sidebar" href="#">
+                <div class="rbd-item"><img src="img/user3.jpg" alt=""/>
+                  <h3 class="rbd-title">عبد المحسن ماضي</h3>
+                  <ul class="rbd-meta">
+                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
+                  </ul>
+                </div></a><a class="rbd-list-sidebar" href="#">
+                <div class="rbd-item"><img src="img/user2.png" alt=""/>
+                  <h3 class="rbd-title">عبد الحميد بومقواس</h3>
+                  <ul class="rbd-meta">
+                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
+                  </ul>
+                </div></a>
+            </div>
+            <div class="top-4-comunity position-sticky sticky-top">
               <h3 class="sidebar-title"><i class="flaticon-heart"></i> أفضل المجتمعات</h3>
               <div class="owl-carousel aside-carousel">
                 <div class="community-post center">
@@ -316,33 +335,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="top-4-users">
-              <h3 class="sidebar-title"><i class="flaticon-user"></i> أفضل المستخدمين</h3><a class="rbd-list-sidebar" href="#">
-                <div class="rbd-item"><img src="img/madf3366.png" alt=""/>
-                  <h3 class="rbd-title">مستخدم جديد</h3>
-                  <ul class="rbd-meta">
-                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
-                  </ul>
-                </div></a><a class="rbd-list-sidebar" href="#">
-                <div class="rbd-item"><img src="img/user3.png" alt=""/>
-                  <h3 class="rbd-title">عبد الله الهادي</h3>
-                  <ul class="rbd-meta">
-                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
-                  </ul>
-                </div></a><a class="rbd-list-sidebar" href="#">
-                <div class="rbd-item"><img src="img/user3.jpg" alt=""/>
-                  <h3 class="rbd-title">عبد المحسن ماضي</h3>
-                  <ul class="rbd-meta">
-                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
-                  </ul>
-                </div></a><a class="rbd-list-sidebar" href="#">
-                <div class="rbd-item"><img src="img/user2.png" alt=""/>
-                  <h3 class="rbd-title">عبد الحميد بومقواس</h3>
-                  <ul class="rbd-meta">
-                    <li class="meta-data"><i class="flaticon-chat"></i> عامة</li>
-                  </ul>
-                </div></a>
             </div>
           </div>
         </div>

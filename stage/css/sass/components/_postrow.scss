@@ -1,7 +1,7 @@
 .post-row {
     background-color: #fff;
     margin: 20px ;
-    width: calc(100% - 285px);
+    //width: calc(100% - 285px);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.116);
     -ms-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.116);
     -o-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.116);
@@ -132,12 +132,13 @@
     }
 
     @media (max-width: 992px) {
-        margin: 15px 4px;
+        margin: 15px 0;
         box-shadow: none;
         -ms-box-shadow: none;
         -o-box-shadow: none;
         -moz-box-shadow: none;
         border-radius: 0;
+        width: 100%;
         .content-post {
             padding: 20px;
             padding-bottom: 10px;
@@ -155,6 +156,7 @@
     }
 
     @media (max-width: 600px) {
+
         .content-post {
             .raiting-votes {
                 font-size: 32px;

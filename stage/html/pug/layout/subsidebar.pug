@@ -1,14 +1,6 @@
 //.site-grid-2
 .ithoub-sub-sidebar
   .inner-sub-sidebar
-    .top-4-comunity
-      h3.sidebar-title
-        i.flaticon-heart
-        |  أفضل المجتمعات
-      .owl-carousel.aside-carousel
-        include ../components/community
-        include ../components/community
-        include ../components/community
     .top-4-users
       h3.sidebar-title
         i.flaticon-user
@@ -17,14 +9,6 @@
         .rbd-item
           img(src='img/madf3366.png', alt='')
           h3.rbd-title مستخدم جديد
-          ul.rbd-meta
-            li.meta-data
-              i.flaticon-chat
-              |  عامة
-      a(href="#").rbd-list-sidebar
-        .rbd-item
-          img(src='img/user3.png', alt='')
-          h3.rbd-title عبد الله الهادي
           ul.rbd-meta
             li.meta-data
               i.flaticon-chat
@@ -45,3 +29,11 @@
             li.meta-data
               i.flaticon-chat
               |  عامة
+    .top-4-comunity.position-sticky.sticky-top
+      h3.sidebar-title
+        i.flaticon-heart
+        |  أفضل المجتمعات
+      .owl-carousel.aside-carousel
+        include ../components/community
+        include ../components/community
+        include ../components/community
