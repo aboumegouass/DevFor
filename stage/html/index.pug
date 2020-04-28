@@ -23,7 +23,8 @@ html(lang="en")
                     .center.load-more.py-4
                         button.btn.but-sm.btn-prim
                             | تحميل المزيد
-                    
+                        button.btn.but-sm.btn-prim(type='button', disabled='')
+                            span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
                 include pug/layout/subsidebar
 
         include pug/layout/scripts

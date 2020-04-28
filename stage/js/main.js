@@ -76,7 +76,6 @@ $('.btn-scroll-top').click(function(){
   return false;
 });
 
-
   $('.btn-sidebar-toggle').on('click', function(){
     $(this).toggleClass('open-active');
     $('.toggle-sidebar-aside, .article-single').toggleClass('nocolumn');
