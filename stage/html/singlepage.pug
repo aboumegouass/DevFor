@@ -12,6 +12,12 @@ html(lang="en")
                 include pug/layout/sub-nav/post_tools
                 .devfor-content
                     include pug/components/single_content
+                    .dev-title
+                        h3.title
+                            | الإجابات
+                        p.left-count
+                            | عدد الإجابات 25
+                    hr
                     include pug/components/single_content_reply
                     .owl-carousel.commun-carousel.pr-3.pl-3(dir="ltr")
                         include pug/components/community

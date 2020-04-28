@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include pug/layout/meta
+        include pug/layout/styles
+        script(src="js/vue.min.js")
+    body
+        include pug/layout/header_guest
+        .site-row
+            include pug/layout/sidebar_guest
+            .site-grid-10.toggle-sidebar-aside
+                
+                include pug/layout/sub-nav/community_tools
+                .devfor-content
+                    .cover-community(style="background-image: url('img/3293c688707567.5dde6a36274b8.jpg')")
+                        img.communt-img(src="img/abdellah.png", alt="")
+                        h3.title
+                            | مجتمع نود جي اس NodeJS
+                        p.meta
+                            | عدد المتابعين: 2503
+                    include pug/components/post_row
+                    include pug/components/post_row
+                    .center.load-more.py-4
+                        button.btn.but-sm.btn-prim
+                            | تحميل المزيد
+                        button.btn.but-sm.btn-prim(type='button', disabled='')
+                            span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
+                include pug/layout/subsidebar
+
+        include pug/layout/scripts
