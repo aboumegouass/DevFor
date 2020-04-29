@@ -215,6 +215,7 @@
             }
         }
     }
+
     &.sub-navbar {
         position: fixed;
         transition: top 1s;
@@ -312,6 +313,16 @@
               }
             }
           }
+          @media (max-width: 680px) {
+            > .nav-item {
+              .options-drop {
+                right: 0;
+                .trick {
+                  right: 5px;
+                }
+              }
+            }
+          }
         }
         &.scrollUp {
           transition: all 1s;
@@ -345,7 +356,36 @@
         }
     }
 }
-
+@media (max-width: 992px) {
+  .nav-for-guest {
+    flex-wrap: inherit;
+    .navbar-collapse {
+      display: flex;
+      .navbar-nav {
+        flex-direction: row;
+      }
+      .search-nav {
+        width: 450px;
+        min-width: 450px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .nav-for-guest {
+    .search-nav {
+      width: 350px;
+      min-width: 350px;
+    }
+  }
+}
+@media (max-width: 680px) {
+  .nav-for-guest {
+    .search-nav {
+      display: none;
+    }
+  }
+}
   /*
   -------------------------------------------------------------------------
     Navbar Style

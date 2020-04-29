@@ -13,7 +13,7 @@
     <script src="js/vue.min.js"></script>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white"><a class="btn-sidebar-toggle"><i class="flaticon-menu"></i></a><a class="navbar-brand nav-logo" href="index.html"><img src="img/logo2.png" alt=""/></a>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white nav-for-guest"><a class="btn-sidebar-toggle"><i class="flaticon-menu"></i></a><a class="navbar-brand nav-logo" href="index.html"><img src="img/logo2.png" alt=""/></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="form-inline search-nav">
           <form action="" method="get">
@@ -62,9 +62,9 @@
       <div class="site-grid-10 toggle-sidebar-aside">
         <!-- Navbar Area-->
         <nav class="navbar navbar-expand-xl navbar-light bg-white sub-navbar">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-settings"></i><span> خيارات...</span></a>
-              <div class="dropdown-menu">
+          <ul class="navbar-nav pr-md-2">
+            <li class="nav-item dropdown right-nav-item"><a class="nav-link" id="dropdownMenuOption" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-settings"></i><span> خيارات...</span></a>
+              <div class="dropdown-menu options-drop" aria-labelledby="dropdownMenuOption">
                 <div class="drop-content"><img class="trick" src="img/trick.png" alt=""/>
                   <ul class="menu-list-items">
                     <li><a href="#"><i class="flaticon-user-1"></i> الصفحة الشخصية</a></li>
@@ -75,7 +75,7 @@
               </div>
             </li>
           </ul>
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto pl-md-2">
             <li class="nav-item ml-1 left-button"><a class="btn btn-prim-out but-sm" href="#"><i class="fa fa-rss"></i><span> متابعة المجتمع</span></a></li>
             <li class="nav-item ml-1 left-button"><a class="btn btn-prim but-sm" href="#"><i class="fa fa-plus-circle"></i><span> إضافة سؤال</span></a></li>
             <li class="nav-item left-sidebar-toggle left-button"><a class="left-sidebar-toggle-btn nav-link" href="#"><i class="flaticon-menu"></i></a></li>
