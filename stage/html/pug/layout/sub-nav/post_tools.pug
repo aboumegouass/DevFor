@@ -5,11 +5,11 @@ nav.navbar.navbar-expand-xl.navbar-light.bg-white.sub-navbar
       a.nav-link(href="community_page.html")
         |  مجتمع لارافال Laravel
     li.nav-item.dropdown.right-nav-item
-        a.nav-link(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+        a.nav-link#dropdownMenuOption(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
           i.flaticon-settings
           span
             |  خيارات...
-        .dropdown-menu.notify-menu.user-menu
+        .dropdown-menu.options-drop(aria-labelledby='dropdownMenuOption')
           .drop-content
             img.trick(src='img/trick.png', alt='')
             ul.menu-list-items
