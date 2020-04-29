@@ -276,11 +276,18 @@
               position: absolute;
               top: 50px;
               padding: 0;
-              border: 1px solid #f1f1f1;
+              border-radius: 10px;
+              border: 1px solid #ccc;
+              -moz-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.075);
+              -ms-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.075);
+              -webkit-box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.075);
+              box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.075);
               z-index: 4001;
               .menu-list-items {
                 padding: 0;
                 background-color: #fff;
+                border-radius: 10px;
+                overflow: hidden;
                 > li {
                   list-style: none;
                   > a {
@@ -298,9 +305,9 @@
               }
               .trick {
                 position: absolute;
-                width: 25px;
-                top: -12px;
-                left: 10px;
+                width: 45px;
+                top: -15px;
+                left: 15px;
                 z-index: -1;
               }
             }
