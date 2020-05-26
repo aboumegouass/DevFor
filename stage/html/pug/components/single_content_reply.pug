@@ -6,8 +6,17 @@
         p.meta
             i.flaticon-clock
             | ضالها نصف ساعة
-        .answered-icon
+        .answered-icon.btn-viryfed-answ
             i.flaticon-checked
+
+        ul.nav.reply-tools.justify-content-end
+            li.nav-item
+                a.nav-link.text-success(title="تعديل")
+                    i.flaticon-edit
+            li.nav-item
+                a.nav-link.text-danger(title="حذف")
+                    i.flaticon2-trash
+             
     .single-content
         .row
             .col-2.p-0
@@ -23,21 +32,18 @@
                         i.fa.fa-reply 
                         | رد
             .col-10.p-0
-                ul.nav.meta-info
-                    li.nav-item
-                        a.nav-link(href="#")
-                            i.flaticon-clock
-                            | 2100
-                h3.single-title
-                    | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
-        p.single-text
-            | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-        pre.line-numbers(dir="ltr")
-            code(class="language-css")
-                |p {
-                |    color: red 
-                | }
+                p.single-text.mr-md-3
+                    | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                pre.line-numbers(dir="ltr").mr-md-3
+                    code(class="language-css")
+                        |p {
+                        |    color: red 
+                        | }
     hr
-    include reply_to_answer
-    include reply_to_answer
-    include reply_to_answer
+    .single-head-top.p-3
+        h4.title
+            | الردود
+    .reply_to_answer
+        include reply_to_answer
+        include reply_to_answer
+        include reply_to_answer

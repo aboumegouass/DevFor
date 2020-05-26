@@ -424,6 +424,12 @@ body {
         position: relative;
         border-bottom: 1px solid #f4f4f4;
         margin-bottom: 15px;
+        ul.nav.reply-tools {
+            position: absolute;
+            left: 40px;
+            top: 0;
+
+        }
         .answered-icon {
             position: absolute;
             left: 0;
@@ -434,6 +440,15 @@ body {
             [class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
             [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {
                 font-size: 32px;
+            }
+            &.btn-viryfed-answ {
+                color: #ccc;
+                cursor: pointer;
+                transition: all 300ms;
+                &:hover {
+                    transition: all 300ms;
+                    color: #333;
+                }
             }
         }
         .title {
@@ -569,6 +584,9 @@ body {
         }
     }
 }
+.reply_to_answer {
+    border-right: 5px solid $primary;
+}
 .reply-to-answer {
     &:nth-child(2n+2) {
         background-color: #f9f9f9;
@@ -576,7 +594,7 @@ body {
     padding: 15px;
     margin: 12px 0;
     margin-bottom: 20px;
-    border-right: 5px solid $primary;
+    
     box-shadow: -4px 4px 15px #f1f1f1;
     .reply-head {
         img {
@@ -599,6 +617,9 @@ body {
             [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {
                 font-size: 12px;
             }
+            i {
+                margin-left: 4px;
+            }
         }
     }
     .reply-tools {
@@ -607,6 +628,7 @@ body {
         > .nav-item {
             font-size: 13px;
             > .nav-link {
+                cursor: pointer;
                 color: #555;
                 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
                 [class^="flaticon-"]:after, [class*=" flaticon-"]:after, 

@@ -15,13 +15,68 @@
   <body>
     <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white"><a class="btn-sidebar-toggle ml-auto"><i class="flaticon-menu"></i></a><a class="mobile-link ml-auto" href="index.html"><i class="flaticon-notification"></i></a><a class="mobile-link ml-auto" href="index.html"><i class="fa fa-search"></i></a><a class="mobile-link ml-auto" href="index.html"><i class="flaticon-user"></i></a><a class="navbar-brand nav-logo" href="index.html"><img src="img/logo2.png" alt=""/></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="form-inline search-nav">
+        <div class="form-inline search-nav is-searching">
           <form action="" method="get">
             <input type="text" placeholder="البحث في الموقع... مثال: كيف تنشئ منصة عمل"/>
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
+          <div class="search-results">
+            <div class="search-results-inner">
+              <div class="search-title">
+                <h4 class="title">الأعضاء</h4><a class="btn btn-default but-sm" href="#">المزيد...</a>
+              </div><a class="item-search" href="#">
+                <h3 class="title"><i class="fa fa-question-circle"></i>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h3>
+                <p class="meta"><i class="fa fa-comment"></i>عدد الإجابات: 2500</p></a><a class="item-search" href="#">
+                <h3 class="title"><i class="fa fa-question-circle"></i>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h3>
+                <p class="meta"><i class="fa fa-comment"></i>عدد الإجابات: 2500</p></a><a class="item-search" href="#">
+                <h3 class="title"><i class="fa fa-question-circle"></i>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h3>
+                <p class="meta"><i class="fa fa-comment"></i>عدد الإجابات: 2500</p></a>
+              <div class="search-title">
+                <h4 class="title">الأعضاء</h4>
+              </div>
+              <div class="users-results">
+                <div class="row">
+                  <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                      <h3 class="title">عبد الله الهادي</h3></a></div>
+                  <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                      <h3 class="title">عبد الله الهادي</h3></a></div>
+                  <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                      <h3 class="title">عبد الله الهادي</h3></a></div>
+                  <div class="col-sm-3 p-0"><a class="user-search-result-btn" href="#"><img src="img/plus.png" alt=""/>
+                      <h3 class="title">المزيد من النتائج</h3></a></div>
+                </div>
+              </div>
+              <div class="search-title">
+                <h4 class="title">الأعضاء</h4>
+              </div>
+              <div class="users-results">
+                <div class="row">
+                  <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                      <h3 class="title">عبد الله الهادي</h3></a></div>
+                  <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                      <h3 class="title">عبد الله الهادي</h3></a></div>
+                  <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                      <h3 class="title">عبد الله الهادي</h3></a></div>
+                  <div class="col-sm-3 p-0"><a class="user-search-result-btn" href="#"><img src="img/plus.png" alt=""/>
+                      <h3 class="title">المزيد من النتائج</h3></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown right-nav-item"><a class="nav-link dropdown-toggle mt-2 pt-1" href="login.php" id="createdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-plus"></i></a>
+            <div class="dropdown-menu create-box" aria-labelledby="createdropdown">
+              <div class="create-box-inner"><img class="trick" src="img/trick.png" alt=""/>
+                <div class="row">
+                  <div class="col-6 p-0"><a class="create-item" href="#"><i class="flaticon-post-it"></i>
+                      <p class="text">إضافة سؤال</p></a></div>
+                  <div class="col-6 p-0"><a class="create-item" href="#"><i class="flaticon-writing"></i>
+                      <p class="text">إضافة مجتمع</p></a></div>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="login.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-notification"></i></a>
             <div class="dropdown-menu notify-menu notification-list">
               <div class="drop-header">
@@ -29,7 +84,10 @@
               </div>
               <div class="drop-content">
                 <ul class="menu-list-items menu-list-notification">
-                  <li v-for="notifItem in notif"><a href="#"><span v-html="notifItem.profile"></span><span v-html="notifItem.title"></span><span class="noty-time" v-html="notifItem.ago"></span><span class="noty-icon" v-html="notifItem.icon"></span></a></li>
+                  <li><a href="#"><span><img src="img/user3.jpg"/></span><span>لقد قام <strong>عبد الله الهادي</strong> نبضة لمقالك <strong>ماهو الفرق بين واجهة المستخدم</strong></span><span class="noty-time"> <span class="notify-time"><i class="fa fa-clock"></i> منذ 5 دقائق</span></span><span class="noty-icon"><span class="notify-icon notify-icon-heart"></span><i class="fa fa-heart"></i></span></a></li>
+                  <li><a href="#"><span><img src="img/user3.png"/></span><span>لقد قام <strong>عبد الله الهادي</strong> نبضة لمقالك <strong>ماهو الفرق بين واجهة المستخدم</strong></span><span class="noty-time"> <span class="notify-time"><i class="fa fa-clock"></i> منذ 5 دقائق</span></span><span class="noty-icon"><span class="notify-icon notify-icon-heart"></span><i class="fa fa-comment"></i></span></a></li>
+                  <li><a href="#"><span><img src="img/user2.png"/></span><span>لقد قام <strong>عبد الله الهادي</strong> نبضة لمقالك <strong>ماهو الفرق بين واجهة المستخدم</strong></span><span class="noty-time"> <span class="notify-time"><i class="fa fa-clock"></i> منذ 5 دقائق</span></span><span class="noty-icon"><span class="notify-icon notify-icon-heart"></span><i class="fa fa-rss"></i></span></a></li>
+                  <li><a href="#"><span><img src="img/user3.jpg"/></span><span>لقد قام <strong>عبد الله الهادي</strong> نبضة لمقالك <strong>ماهو الفرق بين واجهة المستخدم</strong></span><span class="noty-time"> <span class="notify-time"><i class="fa fa-clock"></i> منذ 5 دقائق</span></span><span class="noty-icon"><span class="notify-icon notify-icon-heart"></span><i class="fa fa-comment"></i></span></a></li>
                 </ul><a class="see-all-link" href="#">كل الإشعارات...</a>
               </div>
             </div>
@@ -80,9 +138,8 @@
               <div class="dropdown-menu options-drop" aria-labelledby="dropdownMenuOption">
                 <div class="drop-content"><img class="trick" src="img/trick.png" alt=""/>
                   <ul class="menu-list-items">
-                    <li><a href="#"><i class="flaticon-user-1"></i> الصفحة الشخصية</a></li>
-                    <li><a href="#"><i class="flaticon-settings"></i> الإعدادات</a></li>
-                    <li><a href="#"><i class="flaticon-logout"></i> تسجيل الخروج</a></li>
+                    <li><a href="#"><i class="flaticon2-trash"></i>حذف السؤال</a></li>
+                    <li><a href="#"><i class="flaticon-edit"></i> تعديل السؤال</a></li>
                   </ul>
                 </div>
               </div>
@@ -146,7 +203,11 @@
             <div class="single-head-top"><img src="img/madf3366.png" alt=""/>
               <h4 class="title">بومقواس عبد الحميد</h4>
               <p class="meta"><i class="flaticon-clock"></i>ضالها نصف ساعة</p>
-              <div class="answered-icon"><i class="flaticon-checked"></i></div>
+              <div class="answered-icon btn-viryfed-answ"><i class="flaticon-checked"></i></div>
+              <ul class="nav reply-tools justify-content-end">
+                <li class="nav-item"><a class="nav-link text-success" title="تعديل"><i class="flaticon-edit"></i></a></li>
+                <li class="nav-item"><a class="nav-link text-danger" title="حذف"><i class="flaticon2-trash"></i></a></li>
+              </ul>
             </div>
             <div class="single-content">
               <div class="row">
@@ -159,75 +220,73 @@
                   <div class="reply-button center"><a class="btn btn-prim btn-block but-sm" href="#"><i class="fa fa-reply"> </i>رد</a></div>
                 </div>
                 <div class="col-10 p-0">
-                  <ul class="nav meta-info">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-clock"></i>2100</a></li>
-                  </ul>
-                  <h3 class="single-title">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد</h3>
-                </div>
-              </div>
-              <p class="single-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
-              <pre class="line-numbers" dir="ltr"><code class="language-css">p {
+                  <p class="single-text mr-md-3">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                  <pre class="line-numbers mr-md-3" dir="ltr"><code class="language-css">p {
    color: red 
 }</code></pre>
+                </div>
+              </div>
             </div>
             <hr/>
-            <div class="reply-to-answer">
-              <div class="row">
-                <div class="col-3 p-0">
-                  <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
-                    <h4 class="title">عبد الله الهادي</h4>
-                    <p class="meta">عضو مميز</p>
+            <div class="single-head-top p-3">
+              <h4 class="title">الردود</h4>
+            </div>
+            <div class="reply_to_answer">
+              <div class="reply-to-answer">
+                <div class="row">
+                  <div class="col-3 p-0">
+                    <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
+                      <h4 class="title">عبد الله الهادي</h4>
+                      <p class="meta"><i class="fa fa-clock"> </i>منذ 4 دقائق</p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-9 p-0">
-                  <ul class="nav reply-tools justify-content-end">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-clock"></i>منذ 4 دقائق</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
-                    <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
-                    <li class="nav-item dropdown"><span class="nav-link text-red dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-more"></i>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">تبليغ</a><a class="dropdown-item" href="#">مشاركة...</a><a class="dropdown-item" href="#">إقتباس</a></div></span></li>
-                  </ul>
-                  <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                  <div class="col-9 p-0">
+                    <ul class="nav reply-tools justify-content-end">
+                      <li class="nav-item"><a class="nav-link" href="#" title="تعديل"><i class="flaticon-edit"></i></a></li>
+                      <li class="nav-item"><a class="nav-link text-danger" href="#" title="حذف"><i class="flaticon2-trash"></i></a></li>
+                      <li class="nav-item dropdown"><span class="nav-link text-red dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-more"></i>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">تبليغ</a><a class="dropdown-item" href="#">مشاركة...</a><a class="dropdown-item" href="#">إقتباس</a></div></span></li>
+                    </ul>
+                    <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="reply-to-answer">
-              <div class="row">
-                <div class="col-3 p-0">
-                  <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
-                    <h4 class="title">عبد الله الهادي</h4>
-                    <p class="meta">عضو مميز</p>
+              <div class="reply-to-answer">
+                <div class="row">
+                  <div class="col-3 p-0">
+                    <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
+                      <h4 class="title">عبد الله الهادي</h4>
+                      <p class="meta"><i class="fa fa-clock"> </i>منذ 4 دقائق</p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-9 p-0">
-                  <ul class="nav reply-tools justify-content-end">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-clock"></i>منذ 4 دقائق</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
-                    <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
-                    <li class="nav-item dropdown"><span class="nav-link text-red dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-more"></i>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">تبليغ</a><a class="dropdown-item" href="#">مشاركة...</a><a class="dropdown-item" href="#">إقتباس</a></div></span></li>
-                  </ul>
-                  <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                  <div class="col-9 p-0">
+                    <ul class="nav reply-tools justify-content-end">
+                      <li class="nav-item"><a class="nav-link" href="#" title="تعديل"><i class="flaticon-edit"></i></a></li>
+                      <li class="nav-item"><a class="nav-link text-danger" href="#" title="حذف"><i class="flaticon2-trash"></i></a></li>
+                      <li class="nav-item dropdown"><span class="nav-link text-red dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-more"></i>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">تبليغ</a><a class="dropdown-item" href="#">مشاركة...</a><a class="dropdown-item" href="#">إقتباس</a></div></span></li>
+                    </ul>
+                    <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="reply-to-answer">
-              <div class="row">
-                <div class="col-3 p-0">
-                  <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
-                    <h4 class="title">عبد الله الهادي</h4>
-                    <p class="meta">عضو مميز</p>
+              <div class="reply-to-answer">
+                <div class="row">
+                  <div class="col-3 p-0">
+                    <div class="reply-head center"><img src="img/madf3366.png" alt=""/>
+                      <h4 class="title">عبد الله الهادي</h4>
+                      <p class="meta"><i class="fa fa-clock"> </i>منذ 4 دقائق</p>
+                    </div>
                   </div>
-                </div>
-                <div class="col-9 p-0">
-                  <ul class="nav reply-tools justify-content-end">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-clock"></i>منذ 4 دقائق</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="flaticon-edit"></i></a></li>
-                    <li class="nav-item"><a class="nav-link text-red" href="#"><i class="flaticon2-trash"></i></a></li>
-                    <li class="nav-item dropdown"><span class="nav-link text-red dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-more"></i>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">تبليغ</a><a class="dropdown-item" href="#">مشاركة...</a><a class="dropdown-item" href="#">إقتباس</a></div></span></li>
-                  </ul>
-                  <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                  <div class="col-9 p-0">
+                    <ul class="nav reply-tools justify-content-end">
+                      <li class="nav-item"><a class="nav-link" href="#" title="تعديل"><i class="flaticon-edit"></i></a></li>
+                      <li class="nav-item"><a class="nav-link text-danger" href="#" title="حذف"><i class="flaticon2-trash"></i></a></li>
+                      <li class="nav-item dropdown"><span class="nav-link text-red dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-more"></i>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">تبليغ</a><a class="dropdown-item" href="#">مشاركة...</a><a class="dropdown-item" href="#">إقتباس</a></div></span></li>
+                    </ul>
+                    <p class="reply-text">إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.</p>
+                  </div>
                 </div>
               </div>
             </div>

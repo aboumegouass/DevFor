@@ -16,13 +16,68 @@
     <div class="page">
       <nav class="navbar fixed-top navbar-expand-sm navbar-light rbd-navbar bg-white"><a class="btn-sidebar-toggle ml-auto"><i class="flaticon-menu"></i></a><a class="mobile-link ml-auto" href="index.html"><i class="flaticon-notification"></i></a><a class="mobile-link ml-auto" href="index.html"><i class="fa fa-search"></i></a><a class="mobile-link ml-auto" href="index.html"><i class="flaticon-user"></i></a><a class="navbar-brand nav-logo" href="index.html"><img src="img/logo2.png" alt=""/></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="form-inline search-nav">
+          <div class="form-inline search-nav is-searching">
             <form action="" method="get">
               <input type="text" placeholder="البحث في الموقع... مثال: كيف تنشئ منصة عمل"/>
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
+            <div class="search-results">
+              <div class="search-results-inner">
+                <div class="search-title">
+                  <h4 class="title">الأعضاء</h4><a class="btn btn-default but-sm" href="#">المزيد...</a>
+                </div><a class="item-search" href="#">
+                  <h3 class="title"><i class="fa fa-question-circle"></i>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h3>
+                  <p class="meta"><i class="fa fa-comment"></i>عدد الإجابات: 2500</p></a><a class="item-search" href="#">
+                  <h3 class="title"><i class="fa fa-question-circle"></i>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h3>
+                  <p class="meta"><i class="fa fa-comment"></i>عدد الإجابات: 2500</p></a><a class="item-search" href="#">
+                  <h3 class="title"><i class="fa fa-question-circle"></i>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة</h3>
+                  <p class="meta"><i class="fa fa-comment"></i>عدد الإجابات: 2500</p></a>
+                <div class="search-title">
+                  <h4 class="title">الأعضاء</h4>
+                </div>
+                <div class="users-results">
+                  <div class="row">
+                    <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                        <h3 class="title">عبد الله الهادي</h3></a></div>
+                    <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                        <h3 class="title">عبد الله الهادي</h3></a></div>
+                    <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                        <h3 class="title">عبد الله الهادي</h3></a></div>
+                    <div class="col-sm-3 p-0"><a class="user-search-result-btn" href="#"><img src="img/plus.png" alt=""/>
+                        <h3 class="title">المزيد من النتائج</h3></a></div>
+                  </div>
+                </div>
+                <div class="search-title">
+                  <h4 class="title">الأعضاء</h4>
+                </div>
+                <div class="users-results">
+                  <div class="row">
+                    <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                        <h3 class="title">عبد الله الهادي</h3></a></div>
+                    <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                        <h3 class="title">عبد الله الهادي</h3></a></div>
+                    <div class="col-sm-3 p-0"><a class="user-search-result center" href="#"><img src="img/user3.png" alt=""/>
+                        <h3 class="title">عبد الله الهادي</h3></a></div>
+                    <div class="col-sm-3 p-0"><a class="user-search-result-btn" href="#"><img src="img/plus.png" alt=""/>
+                        <h3 class="title">المزيد من النتائج</h3></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown right-nav-item"><a class="nav-link dropdown-toggle mt-2 pt-1" href="login.php" id="createdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-plus"></i></a>
+              <div class="dropdown-menu create-box" aria-labelledby="createdropdown">
+                <div class="create-box-inner"><img class="trick" src="img/trick.png" alt=""/>
+                  <div class="row">
+                    <div class="col-6 p-0"><a class="create-item" href="#"><i class="flaticon-post-it"></i>
+                        <p class="text">إضافة سؤال</p></a></div>
+                    <div class="col-6 p-0"><a class="create-item" href="#"><i class="flaticon-writing"></i>
+                        <p class="text">إضافة مجتمع</p></a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
             <li class="nav-item dropdown right-nav-item"><a class="nav-link" href="login.php" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="flaticon-notification"></i></a>
               <div class="dropdown-menu notify-menu notification-list">
                 <div class="drop-header">
@@ -30,7 +85,10 @@
                 </div>
                 <div class="drop-content">
                   <ul class="menu-list-items menu-list-notification">
-                    <li v-for="notifItem in notif"><a href="#"><span v-html="notifItem.profile"></span><span v-html="notifItem.title"></span><span class="noty-time" v-html="notifItem.ago"></span><span class="noty-icon" v-html="notifItem.icon"></span></a></li>
+                    <li><a href="#"><span><img src="img/user3.jpg"/></span><span>لقد قام <strong>عبد الله الهادي</strong> نبضة لمقالك <strong>ماهو الفرق بين واجهة المستخدم</strong></span><span class="noty-time"> <span class="notify-time"><i class="fa fa-clock"></i> منذ 5 دقائق</span></span><span class="noty-icon"><span class="notify-icon notify-icon-heart"></span><i class="fa fa-heart"></i></span></a></li>
+                    <li><a href="#"><span><img src="img/user3.png"/></span><span>لقد قام <strong>عبد الله الهادي</strong> نبضة لمقالك <strong>ماهو الفرق بين واجهة المستخدم</strong></span><span class="noty-time"> <span class="notify-time"><i class="fa fa-clock"></i> منذ 5 دقائق</span></span><span class="noty-icon"><span class="notify-icon notify-icon-heart"></span><i class="fa fa-comment"></i></span></a></li>
+                    <li><a href="#"><span><img src="img/user2.png"/></span><span>لقد قام <strong>عبد الله الهادي</strong> نبضة لمقالك <strong>ماهو الفرق بين واجهة المستخدم</strong></span><span class="noty-time"> <span class="notify-time"><i class="fa fa-clock"></i> منذ 5 دقائق</span></span><span class="noty-icon"><span class="notify-icon notify-icon-heart"></span><i class="fa fa-rss"></i></span></a></li>
+                    <li><a href="#"><span><img src="img/user3.jpg"/></span><span>لقد قام <strong>عبد الله الهادي</strong> نبضة لمقالك <strong>ماهو الفرق بين واجهة المستخدم</strong></span><span class="noty-time"> <span class="notify-time"><i class="fa fa-clock"></i> منذ 5 دقائق</span></span><span class="noty-icon"><span class="notify-icon notify-icon-heart"></span><i class="fa fa-comment"></i></span></a></li>
                   </ul><a class="see-all-link" href="#">كل الإشعارات...</a>
                 </div>
               </div>
