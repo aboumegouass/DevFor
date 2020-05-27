@@ -223,6 +223,7 @@
               &.active {
                 color: $primary;
                 font-weight: bold;
+                border-bottom: 3px solid $primary;
               }
             }
 
