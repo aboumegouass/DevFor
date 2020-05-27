@@ -208,6 +208,26 @@
         -o-box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.137);
         -ms-box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.137);
         -moz-box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.137);
+        .nav {
+          padding-right: 0;
+          border-bottom: 1px solid #f5f5f5;
+          .nav-item {
+            .nav-link {
+              color: #777;
+              font-weight: normal;
+              padding: 20px 10px;
+              font-size: 14px;
+              &:hover {
+                color: $primary;
+              }
+              &.active {
+                color: $primary;
+                font-weight: bold;
+              }
+            }
+
+          }
+        }
         .search-title {
           position: relative;
           color: #777;

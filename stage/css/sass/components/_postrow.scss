@@ -1,12 +1,13 @@
 .post-row {
     background-color: #fff;
-    margin: 20px ;
+    margin: 20px;
     //width: calc(100% - 285px);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.116);
-    -ms-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.116);
-    -o-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.116);
-    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.116);
-    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    -ms-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    -o-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 7px;
+    border: 1px solid #f1f1f1;
     &:first-of-type {
         margin-top: 60px;
     }
@@ -105,6 +106,7 @@
         .post-title {
             margin: 10px 0;
             line-height: 36px;
+            font-size: 20px;
             a {
                 color: #555;
                 &:hover {
@@ -125,6 +127,19 @@
                     &:hover {
                         background-color: #ddd;
                         color: #000;
+                    }
+                }
+                &.communt-parent {
+                    > .nav-link {
+                        color: #777;
+                        font-size: 13px;
+                        background-color: #fff;
+                        padding-top: 0;
+                        transition: all 300ms;
+                        &:hover {
+                            background-color: #fff;
+                            color: #000;
+                        }
                     }
                 }
             }
