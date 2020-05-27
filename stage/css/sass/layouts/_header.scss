@@ -208,9 +208,12 @@
         -o-box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.137);
         -ms-box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.137);
         -moz-box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.137);
+        .navbar {
+          border-bottom: 1px solid #f5f5f5;
+        }
         .nav {
           padding-right: 0;
-          border-bottom: 1px solid #f5f5f5;
+          
           .nav-item {
             .nav-link {
               color: #777;

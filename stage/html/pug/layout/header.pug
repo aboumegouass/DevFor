@@ -18,14 +18,18 @@ nav.navbar.fixed-top.navbar-expand-sm.navbar-light.rbd-navbar.bg-white
           i.fa.fa-search
       .search-results
         .search-results-inner
-  
-          ul#pills-tab.nav.mb-2(role='tablist')
-            li.nav-item(role='presentation')
-              a#pills-home-tab.nav-link.active(data-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') الأسئلة
-            li.nav-item(role='presentation')
-              a#pills-profile-tab.nav-link(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') المجتمعات
-            li.nav-item(role='presentation')
-              a#pills-contact-tab.nav-link(data-toggle='pill', href='#pills-contact', role='tab', aria-controls='pills-contact', aria-selected='false') الأعضاء
+          nav.navbar.mb-2
+            ul#pills-tab.nav(role='tablist')
+              li.nav-item(role='presentation')
+                a#pills-home-tab.nav-link.active(data-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') الأسئلة
+              li.nav-item(role='presentation')
+                a#pills-profile-tab.nav-link(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') المجتمعات
+              li.nav-item(role='presentation')
+                a#pills-contact-tab.nav-link(data-toggle='pill', href='#pills-contact', role='tab', aria-controls='pills-contact', aria-selected='false') الأعضاء
+    
+            ul.nav.mr-auto
+              li.nav-item
+                a.nav-link(href='#') المزيد من النتائج...
           #pills-tabContent.tab-content
             #pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-home-tab') 
 
@@ -50,6 +54,10 @@ nav.navbar.fixed-top.navbar-expand-sm.navbar-light.rbd-navbar.bg-white
                 p.meta
                   i.fa.fa-comment
                   | عدد الإجابات: 2500
+              a.item-search(href="#")
+                h3.title
+                  i.fa.fa-search
+                  | المزيد من النتائج
             #pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='pills-profile-tab')
               .users-results
                 .row
