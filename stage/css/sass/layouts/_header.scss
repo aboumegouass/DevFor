@@ -513,6 +513,11 @@
                       color: #333;
                     }
                   }
+                  &.is-unread {
+                    > a {
+                      background-color: #f9f9f9;
+                    }
+                  }
                 }
               }
               .trick {
@@ -837,6 +842,11 @@
           > a {
             border-radius: 7px 7px 0 0 ;
         }
+        }
+        &.is-unread {
+          > a {
+            background-color: #f9f9f9;
+          }
         }
       }
     }
