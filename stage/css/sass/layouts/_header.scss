@@ -10,6 +10,16 @@
 /*
 ------------------------------------------------------------------------------------------
 */
+@keyframes bell_anim {
+  0% {
+    transform: rotate(-10deg);
+    text-shadow: 1px 2px 4px lighten($primary, 30);
+  }
+  100% {
+    transform: rotate(0deg);
+    text-shadow: 1px 2px 4px lighten($primary, 60);
+  }
+}
 .navbar {
   padding: 0rem 1rem;
   margin: 0;
@@ -184,7 +194,20 @@
             color: darken($primary, 20);
         } 
     }
-
+    &.is-notify {
+      .flaticon-notification {
+        display: none;
+      }
+      .fa-bell {
+        font-size: 22px;
+        color: $primary;
+        transform: rotate(-10deg);
+        text-shadow: 1px 2px 4px lighten($primary, 30);
+        animation: bell_anim 700ms;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+      }
+    }
 }
 .navbar {
   .search-nav {
