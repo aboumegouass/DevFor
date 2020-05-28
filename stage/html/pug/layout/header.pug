@@ -79,27 +79,9 @@ nav.navbar.fixed-top.navbar-expand-sm.navbar-light.rbd-navbar.bg-white
                         | عبد الله الهادي
             #pills-contact.tab-pane.fade(role='tabpanel', aria-labelledby='pills-contact-tab')
               .users-results
-                .row
-                  .col-sm-3.p-0
-                    a.user-search-result.center(href="#")
-                      img(src="img/user3.png", alt="")
-                      h3.title
-                        | عبد الله الهادي
-                  .col-sm-3.p-0
-                    a.user-search-result.center(href="#")
-                      img(src="img/user3.png", alt="")
-                      h3.title
-                        | عبد الله الهادي
-                  .col-sm-3.p-0
-                    a.user-search-result.center(href="#")
-                      img(src="img/user3.png", alt="")
-                      h3.title
-                        | عبد الله الهادي
-                  .col-sm-3.p-0
-                    a.user-search-result.center(href="#")
-                      img(src="img/user3.png", alt="")
-                      h3.title
-                        | عبد الله الهادي         
+                .d-flex.justify-content-center.py-5
+                  .spinner-border(role='status')
+                    span.sr-only Loading...
     ul.navbar-nav.mr-auto
       li.nav-item.dropdown.right-nav-item
         a.nav-link.dropdown-toggle.mt-2(href='login.php', id="createdropdown", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false").pt-1
