@@ -75,6 +75,12 @@ $('.btn-scroll-top').click(function(){
   $("html, body").animate({ scrollTop: 0 }, 600);
   return false;
 });
+$('.notifi-unread-btn').click(function(){
+  var btn = $(this);
+  btn.toggleClass('toggle-btn');
+  btn.parent('.notification-item').toggleClass('is-unread');
+});
+
 
   $('.btn-sidebar-toggle').on('click', function(){
     $(this).toggleClass('open-active');

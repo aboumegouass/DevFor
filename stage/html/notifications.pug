@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include pug/layout/meta
+        include pug/layout/styles
+        script(src="js/vue.min.js")
+    body
+        include pug/layout/header_guest
+        .site-row
+            include pug/layout/sidebar_guest
+            .site-grid-10.toggle-sidebar-aside
+                
+                include pug/layout/sub-nav/filter_tools
+                .devfor-content.pb-3
+                    include pug/components/notification_row
+                    .center.load-more.py-4
+                        button.btn.but-sm.btn-prim
+                            | تحميل المزيد
+                        button.btn.but-sm.btn-prim(type='button', disabled='')
+                            span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
+                include pug/layout/subsidebar
+
+        include pug/layout/scripts

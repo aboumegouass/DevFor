@@ -706,6 +706,96 @@ body {
 }
 /*
 ----------------------------------------------------------------------------------------------
+    Notifications Items
+----------------------------------------------------------------------------------------------
+*/
+.notification_row {
+    padding: 15px;
+    margin-top: 40px;
+    .notification-title {
+        padding: 15px;
+        border-bottom: 1px solid #f1f1f1;
+        margin-bottom: 3px;
+        .title {
+            color: #555;
+            font-size: 24px;
+            [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+            [class^="flaticon-"]:after, [class*=" flaticon-"]:after, 
+            [class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
+            [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {
+                font-size: 24px;
+            }
+        }
+    }
+    .notification-item {
+        position: relative;
+        background-color: #fff;
+        padding: 25px;
+        margin: 7px 0;
+        transition: all 500ms;
+        border-radius: 7px;
+        border: 1px solid #ddd;
+        box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.068);
+        &::after, &::before {
+            clear: both;
+            content: " ";
+            display: block;
+        }
+        &:first-of-type {
+            margin-top: 45px;
+        }
+        .notifi-profile-img {
+            img {
+                float: right;
+                margin-left: 10px;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+            }
+        }
+        .notifi-time {
+            font-size: 13px;
+            color: #777;
+        }
+        .notifi-icon, .notifi-unread-btn {
+            position: absolute;
+            left: 15px;
+            color: #f1f1f1;
+            transition: all 500ms;
+        }
+        .notifi-icon {
+            bottom: 5px;
+            font-size: 20px;
+        }
+        .notifi-unread-btn {
+            top: 10px;
+            color: $primary;
+            cursor: pointer;
+            opacity: 0.3;
+            font-size: 15px;
+            transition: all 500ms;
+            &.toggle-btn {
+                opacity: 1;
+                text-shadow: 1px 1px 4px $primary;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        &.is-unread {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            transition: all 500ms;
+            box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.13);
+            .notifi-icon{
+                color: #ccc;
+                transition: all 500ms;
+            }
+        }
+    }
+}
+/*
+----------------------------------------------------------------------------------------------
     Platform Items
 ----------------------------------------------------------------------------------------------
 */
