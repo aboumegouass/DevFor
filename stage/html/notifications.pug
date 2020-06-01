@@ -12,7 +12,25 @@ html(lang="en")
                 
                 include pug/layout/sub-nav/filter_tools
                 .devfor-content.pb-3
-                    include pug/components/notification_row
+                    .notification_row
+                        .notification-title
+                            h3.title
+                                i.flaticon-notification
+                                | الإشعارات
+                        .notification-subtitle
+                            h3.title
+                                i.flaticon-clock
+                                | 17-02-2020 20:15
+                        include pug/components/notification_row
+                        include pug/components/notification_row
+                        include pug/components/notification_row
+                        .notification-subtitle
+                            h3.title
+                                i.flaticon-clock
+                                | 17-02-2020 20:15
+                        include pug/components/notification_row
+                        include pug/components/notification_row
+                        include pug/components/notification_row
                     .center.load-more.py-4
                         button.btn.but-sm.btn-prim
                             | تحميل المزيد

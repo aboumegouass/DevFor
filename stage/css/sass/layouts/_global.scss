@@ -505,8 +505,10 @@ body {
                 background-color: #fff;
                 color: #777;
                 font-size: 28px;
-                &:hover {
+                outline: none;
+                &:hover, &:focus {
                     color: $primary;
+                    outline: none;
                 }
             }
             .votes-num {
@@ -724,6 +726,21 @@ body {
             [class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
             [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {
                 font-size: 24px;
+            }
+        }
+    }
+    .notification-subtitle {
+        padding: 10px 15px;
+        border-bottom: 1px solid #f1f1f1;
+        margin-bottom: 3px;
+        .title {
+            color: #777;
+            font-size: 17px;
+            [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+            [class^="flaticon-"]:after, [class*=" flaticon-"]:after, 
+            [class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
+            [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {
+                font-size: 17px;
             }
         }
     }

@@ -37,8 +37,14 @@
         .title {
             margin: 0;
             font-size: 16px;
+            color: #999;
             a {
                 color: #555;
+                margin-left: 6px;
+                &.comm-post {
+                    color: #777;
+                    margin-right: 6px;
+                }
                 &:hover {
                     color: $primary;
                 }
@@ -118,16 +124,50 @@
             padding-right: 0;
             > .nav-item {
                 > .nav-link {
-                    color: #555;
-                    font-size: 12px;
-                    background-color: #f1f1f1;
-                    border-radius: 20px;
-                    margin-left: 4px;
-                    padding: 7px 15px;
-                    &:hover {
-                        background-color: #ddd;
-                        color: #000;
-                    }
+                    background: #eee;
+                    border-radius: 3px 0 0 3px;
+                    color: #999;
+                    display: inline-block;
+                    height: 26px;
+                    line-height: 26px;
+                    font-size: 13px;
+                    padding: 0 20px 0 23px;
+                    position: relative;
+                    margin: 0 10px 10px 0;
+                    text-decoration: none;
+                    -webkit-transition: color 0.2s;
+                      
+                      &::before {
+                        background: #fff;
+                        border-radius: 10px;
+                        box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+                        content: '';
+                        height: 6px;
+                        right: 10px;
+                        position: absolute;
+                        width: 6px;
+                        top: 10px;
+                      }
+                      
+                      &::after {
+                        background: #fff;
+                        border-bottom: 13px solid transparent;
+                        border-right: 10px solid #eee;
+                        border-top: 13px solid transparent;
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                      }
+                      
+                      &:hover {
+                        background-color: $primary;
+                        color: white;
+                      }
+                      
+                      &:hover::after {
+                         border-right-color: $primary;
+                      }
                 }
                 &.communt-parent {
                     > .nav-link {
