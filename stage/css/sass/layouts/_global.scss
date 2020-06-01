@@ -708,13 +708,32 @@ body {
 }
 /*
 ----------------------------------------------------------------------------------------------
+    Community Items
+----------------------------------------------------------------------------------------------
+*/
+.community_row {
+    .community-post {
+        margin: 10px 0;
+        .community-body {
+            .meta {
+                color: #777;
+                i {
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+}
+
+/*
+----------------------------------------------------------------------------------------------
     Notifications Items
 ----------------------------------------------------------------------------------------------
 */
-.notification_row {
+.notification_row, .community_row {
     padding: 15px;
     margin-top: 40px;
-    .notification-title {
+    .notification-title, .community-title {
         padding: 15px;
         border-bottom: 1px solid #f1f1f1;
         margin-bottom: 3px;

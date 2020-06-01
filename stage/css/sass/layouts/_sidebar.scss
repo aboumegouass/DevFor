@@ -88,6 +88,16 @@
     &.left-0 {
         left: 0;
     }
+    .user-rating-box {
+        border: 4px dotted #ddd;
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.089);
+        padding: 20px;
+        text-align: center;
+        .ratting-nmb {
+            color: #999;
+            margin: 0;
+        }
+    }
 }
 
 @media (max-width: 992px) {

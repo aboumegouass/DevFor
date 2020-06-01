@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include pug/layout/meta
+        include pug/layout/styles
+        script(src="js/vue.min.js")
+    body
+        include pug/layout/header_guest
+        .site-row
+            include pug/layout/sidebar_guest
+            .site-grid-10.toggle-sidebar-aside
+                
+                include pug/layout/sub-nav/community_tools
+                .devfor-content
+                    .cover-community(style="background-image: url('img/bg.png')")
+                        img.communt-img(src="img/user3.png", alt="")
+                        h3.title
+                            | الهادي محمد الجقلوف
+                        p.meta(dir="ltr")
+                            | @mohammed2008
+                    include pug/components/post_row
+                    include pug/components/post_row
+                include pug/layout/subsidebar_profile
+
+        include pug/layout/scripts
