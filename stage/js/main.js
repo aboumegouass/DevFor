@@ -25,10 +25,15 @@ $(document).ready(function() {
     height: '250px',
     position: 'left'
   });
-$('.ithoub-sidebar-inner').slimscroll({
-  position: 'left',
-  height: '87vh'
-});
+  $('.ithoub-sidebar-inner').slimscroll({
+    position: 'left',
+    height: '87vh'
+  });
+  $('.inner-sub-sidebar').slimscroll({
+    position: 'left',
+    height: '87vh'
+  });
+
 $('.rbd-summery-inner').slimscroll({
   position: 'left',
   height: '85vh'
