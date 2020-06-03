@@ -971,7 +971,37 @@ body {
     Auth Style 
 ----------------------------------------------------------------------------------------------
 */
-    
+.alert-popup {
+    padding: 15px;
+    text-align: center;
+    .alert-title {
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 4px 0;
+        [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+        [class^="flaticon-"]:after, [class*=" flaticon-"]:after,
+        [class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
+        [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {
+            float: none;
+            font-size: 16;
+            margin-top: 2px;
+        }
+    }
+    .text {
+        color: #555;
+        font-size: 14px;
+        margin: 0;
+        font-weight: normal;
+        [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+        [class^="flaticon-"]:after, [class*=" flaticon-"]:after,
+        [class^="flaticon2-"]:before, [class*=" flaticon2-"]:before,
+        [class^="flaticon2-"]:after, [class*=" flaticon2-"]:after {
+            float: none;
+            margin-top: 2px;
+        }
+    }
+}
 .panel-alert {
     background-color: rgb(233, 233, 233);
     padding: 15px;
