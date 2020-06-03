@@ -106,7 +106,7 @@
         .user-status-item {
             text-align: center;
             img {
-                width: 60px;
+                width: 50px;
                 margin-bottom: 10px;
             }
             [class^="flaticon-"]:before, 
@@ -128,10 +128,30 @@
                 color: #555;
             }
             .title-status {
-                color: #ccc;
+                color: $primary;
             }
         }
 
+    }
+    .user-profile {
+        table {
+            font-size: 13px;
+        }
+    }
+    .user-programing {
+        .user-code {
+            color: #777;
+            font-size: 13px;
+            border-radius: 4px;
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 4px;
+            background-color: #f1f1f1;
+            &:hover {
+                background-color: $primary;
+                color: #fff;
+            }
+        }
     }
 }
 
