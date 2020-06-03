@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include pug/layout/meta
+        include pug/layout/styles
+        script(src="js/vue.min.js")
+    body
+        include pug/layout/header_guest
+        .site-row
+            include pug/layout/sidebar_guest
+            .site-grid-10.toggle-sidebar-aside
+                .devfor-content
+                    h3.sidebar-title.mr-md-4.ml-md-4
+                        i.flaticon-user
+                        |  نقاط السمعة
+                    .panel-alert.mr-md-4.ml-md-4.mb-2
+                        p.text
+                            i.flaticon-checked
+                            | هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                    .programing-edit
+                        form(action="")
+                            ul
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox1(type='checkbox')
+                                    label(for='myCheckbox1')
+                                        img(src='img/Brands/angularjs.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox2(type='checkbox')
+                                    label(for='myCheckbox2')
+                                        img(src='img/Brands/android_studio.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox3(type='checkbox')
+                                    label(for='myCheckbox3')
+                                        img(src='img/Brands/python.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox4(type='checkbox')
+                                    label(for='myCheckbox4')
+                                        img(src='img/Brands/npm.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox5(type='checkbox')
+                                    label(for='myCheckbox5')
+                                        img(src='img/Brands/reactjs.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox6(type='checkbox')
+                                    label(for='myCheckbox6')
+                                        img(src='img/Brands/sass.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox7(type='checkbox')
+                                    label(for='myCheckbox7')
+                                        img(src='img/Brands/scala.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox8(type='checkbox')
+                                    label(for='myCheckbox8')
+                                        img(src='img/Brands/selenium.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox9(type='checkbox')
+                                    label(for='myCheckbox9')
+                                        img(src='img/Brands/sql_server.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox10(type='checkbox')
+                                    label(for='myCheckbox10')
+                                        img(src='img/Brands/xamarin.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox11(type='checkbox')
+                                    label(for='myCheckbox11')
+                                        img(src='img/Brands/wordpress.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox12(type='checkbox')
+                                    label(for='myCheckbox12')
+                                        img(src='img/Brands/woocommerce.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox13(type='checkbox')
+                                    label(for='myCheckbox13')
+                                        img(src='img/Brands/typescript.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox14(type='checkbox')
+                                    label(for='myCheckbox14')
+                                        img(src='img/Brands/vuejs.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox15(type='checkbox')
+                                    label(for='myCheckbox15')
+                                        img(src='img/Brands/vbulletin.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox16(type='checkbox')
+                                    label(for='myCheckbox16')
+                                        img(src='img/Brands/ubuntu.png')
+                                li(data-toggle="tooltip", data-placement="top", title="Tooltip on top")
+                                    input#myCheckbox17(type='checkbox')
+                                    label(for='myCheckbox17')
+                                        img(src='img/Brands/shopify.png')
+                            .edit-button.py-3.center
+                                button.btn.but-md.btn-prim
+                                    i.flaticon-edit
+                                    | تعديل
+                                
+                include pug/layout/subsidebar_profile
+
+        include pug/layout/scripts
