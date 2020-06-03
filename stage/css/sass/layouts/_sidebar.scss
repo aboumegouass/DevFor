@@ -76,7 +76,7 @@
         }
 
     }
-    
+
 }
 .ithoub-sub-sidebar {
     transition: 0.3s;
@@ -97,6 +97,41 @@
             color: #999;
             margin: 0;
         }
+    }
+    .user-status {
+        margin-top: 15px;
+        border: 4px dotted #ddd;
+        padding: 12px;
+        box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.096);
+        .user-status-item {
+            text-align: center;
+            img {
+                width: 60px;
+                margin-bottom: 10px;
+            }
+            [class^="flaticon-"]:before, 
+            [class*=" flaticon-"]:before, 
+            [class^="flaticon-"]:after, 
+            [class*=" flaticon-"]:after,
+             [class^="flaticon2-"]:before, 
+            [class*=" flaticon2-"]:before, 
+            [class^="flaticon2-"]:after, 
+            [class*=" flaticon2-"]:after {
+                font-size: 35px;
+                float: none;
+                margin-left: 0;
+                color: #ccc;
+            }    
+            .meta {
+                margin: 0;
+                font-size: 13px;
+                color: #555;
+            }
+            .title-status {
+                color: #ccc;
+            }
+        }
+
     }
 }
 
