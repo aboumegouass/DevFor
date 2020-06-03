@@ -1002,7 +1002,7 @@ body {
                 }
                 &:after {
                     position: absolute;
-                    background-color: rgba(255, 255, 255, 0.459);
+                    background-color: rgba(255, 255, 255, 0);
                     content: " ";
                     display: block;
                     top: 0;
@@ -1045,7 +1045,7 @@ body {
                   transform: scale(1);
               }
               :checked + label:after {
-                background-color: rgba(255, 255, 255, 0);
+                background-color: rgba(255, 255, 255, 0.534);
                 transition-duration: 0.4s;
             }
               :checked + label img {
