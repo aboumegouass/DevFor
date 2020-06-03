@@ -109,19 +109,6 @@
                 width: 50px;
                 margin-bottom: 10px;
             }
-            [class^="flaticon-"]:before, 
-            [class*=" flaticon-"]:before, 
-            [class^="flaticon-"]:after, 
-            [class*=" flaticon-"]:after,
-             [class^="flaticon2-"]:before, 
-            [class*=" flaticon2-"]:before, 
-            [class^="flaticon2-"]:after, 
-            [class*=" flaticon2-"]:after {
-                font-size: 35px;
-                float: none;
-                margin-left: 0;
-                color: #ccc;
-            }    
             .meta {
                 margin: 0;
                 font-size: 13px;
@@ -145,7 +132,7 @@
             border-radius: 4px;
             display: inline-block;
             padding: 4px 8px;
-            margin: 4px;
+            margin: 4px 2px;
             background-color: #f1f1f1;
             &:hover {
                 background-color: $primary;

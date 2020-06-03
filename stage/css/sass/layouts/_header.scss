@@ -552,9 +552,7 @@
                 &.active {
                     background: $primary;
                     border-radius: 5px;
-                    padding: 5px 25px;
                     font-weight: bold;
-                    margin-top: 4px;
                     color: #fff;
                     [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
                     [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
@@ -572,9 +570,7 @@
                 .nav-link {
                     background: $primary;
                     border-radius: 15px;
-                    padding: 5px 25px;
                     font-weight: bold;
-                    margin-top: 4px;
                     [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
                     [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
                         font-size: 13px;
