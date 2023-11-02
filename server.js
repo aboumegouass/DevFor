@@ -1,5 +1,5 @@
-var StaticServer = require('static-server');
-var server = new StaticServer({
+var StaticServer2 = require('static-server');
+var server = new StaticServer2({
     rootPath: './dist/',
     port: 8000
 });
